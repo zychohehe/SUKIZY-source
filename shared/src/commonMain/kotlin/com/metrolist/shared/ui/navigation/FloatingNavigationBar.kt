@@ -4,12 +4,15 @@ package com.metrolist.shared.ui.navigation
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.core.tween
 import androidx.compose.animation.expandHorizontally
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.shrinkHorizontally
 import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutVertically
+import androidx.compose.foundation.background
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -40,6 +43,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.semantics.Role
@@ -49,8 +55,6 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.metrolist.shared.ui.components.focusOutline
 import com.metrolist.shared.ui.glass.IosMotion
-import com.metrolist.shared.ui.glass.glassNavPill
-import com.metrolist.shared.ui.glass.glassSelectionIndicator
 
 val LocalFloatingNavBar = compositionLocalOf { false }
 
@@ -113,7 +117,7 @@ private fun <T> FloatingNavigationBar(
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Surface(
-            modifier = Modifier.wrapContentWidth().height(FloatingBarHeight).glassNavPill(),
+            modifier = Modifier.wrapContentWidth().height(FloatingBarHeight).navPill(),
             shape = CircleShape,
             color = Color.Transparent,
             contentColor = MaterialTheme.colorScheme.onSurface,
@@ -137,7 +141,7 @@ private fun <T> FloatingNavigationBar(
         if (separateItem != null) {
             val selected = separateItem.key == selectedKey
             val content by animateColorAsState(
-                if (selected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface,
+                if (selected) MaterialTheme.colorScheme.onSecondaryContainer else MaterialTheme.colorScheme.onSurface,
                 label = "floatingSearchContent",
             )
             Surface(
@@ -145,8 +149,8 @@ private fun <T> FloatingNavigationBar(
                 modifier =
                     Modifier
                         .size(FloatingBarHeight)
-                        .glassNavPill()
-                        .glassSelectionIndicator(selected)
+                        .navPill()
+                        .navSelectionIndicator(selected)
                         .then(itemModifier(separateItem.key)),
                 shape = CircleShape,
                 color = Color.Transparent,
@@ -171,7 +175,7 @@ private fun <T> FloatingNavigationItem(
     modifier: Modifier = Modifier,
 ) {
     val contentColor by animateColorAsState(
-        if (selected) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.onSurfaceVariant,
+        if (selected) MaterialTheme.colorScheme.onSecondaryContainer else MaterialTheme.colorScheme.onSurfaceVariant,
         label = "floatingItemContent",
     )
     Row(
@@ -179,7 +183,7 @@ private fun <T> FloatingNavigationItem(
             modifier
                 .height(FloatingItemHeight)
                 .clip(CircleShape)
-                .glassSelectionIndicator(selected)
+                .navSelectionIndicator(selected)
                 .focusOutline(CircleShape)
                 .selectable(
                     selected = selected,
@@ -209,5 +213,28 @@ private fun <T> FloatingNavigationItem(
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
         )
+    }
+}
+
+/** Plain navigation pill: flat surface color with a hairline shadow. No blur, gradients or borders. */
+@Composable
+private fun Modifier.navPill(): Modifier {
+    val color = MaterialTheme.colorScheme.surfaceContainer
+    return this.shadow(2.dp, CircleShape, clip = false).background(color, CircleShape)
+}
+
+/** Selected tab marker. The animated value is read only while drawing, so tab changes never recompose the bar. */
+@Composable
+private fun Modifier.navSelectionIndicator(selected: Boolean): Modifier {
+    val fraction =
+        animateFloatAsState(
+            targetValue = if (selected) 1f else 0f,
+            animationSpec = tween(durationMillis = 180),
+            label = "navSelection",
+        )
+    val color = MaterialTheme.colorScheme.secondaryContainer
+    return this.drawBehind {
+        val value = fraction.value
+        if (value > 0.001f) drawRoundRect(color, cornerRadius = CornerRadius(size.minDimension / 2f), alpha = value)
     }
 }

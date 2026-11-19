@@ -50,6 +50,7 @@ import com.metrolist.shared.ui.theme.animateColorScheme
 import com.metrolist.shared.ui.theme.orIfIllegible
 import com.metrolist.shared.ui.theme.pureBlack
 import com.metrolist.shared.ui.theme.themeColorScheme
+import dev.chrisbanes.haze.HazeState
 import dev.chrisbanes.haze.rememberHazeState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -128,7 +129,8 @@ fun MetrolistTheme(
             }
         }
 
-    val motionScheme = remember { MotionScheme.expressive() }
+    // Standard motion: critically damped springs, lighter and calmer than the bouncy expressive scheme.
+    val motionScheme = remember { MotionScheme.standard() }
     val animatedColorScheme = animateColorScheme(colorScheme, motionScheme)
     val background = colorScheme.surface.toArgb()
     DisposableEffect(context, background) {
@@ -136,9 +138,9 @@ fun MetrolistTheme(
         onDispose { }
     }
 
-    // One blur source shared by the navbar, mini player and top bar. Live blur needs Android 12+.
-    val glassHazeState = rememberHazeState()
-    val glassBlurSupported = Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
+    // Live blur is off for performance: glass surfaces fall back to a flat tint.
+    val glassHazeState: HazeState? = null
+    val glassBlurSupported = false
 
     MaterialExpressiveTheme(
         colorScheme = animatedColorScheme,

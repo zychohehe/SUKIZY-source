@@ -255,7 +255,7 @@ android {
         applicationId = "com.sukizy"
         minSdk = 24
         targetSdk = 37
-        versionCode = 160
+        versionCode = 161
         versionName = appVersion
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -317,6 +317,8 @@ android {
             matchingFallbacks += "release"
         }
         debug {
+            // Debuggable builds run much slower on device; this APK is for daily use, still signed with the debug key.
+            isDebuggable = false
             manifestPlaceholders["appLabel"] = "SUKIZY"
         }
     }
