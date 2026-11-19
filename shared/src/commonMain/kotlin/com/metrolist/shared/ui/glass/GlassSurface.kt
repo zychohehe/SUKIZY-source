@@ -16,6 +16,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.geometry.Offset
@@ -110,14 +111,18 @@ fun Modifier.glassSurface(
     val glassShape = shape
     val withBlur =
         if (blurred && hazeState != null) {
-            Modifier.hazeGlass(
-                input = HazeInput.Sources(hazeState),
-                style =
-                    GlassStyle.regular.then {
-                        tint(mixed.copy(alpha = tintAlpha))
-                        shape(glassShape)
-                    },
-            )
+            // Haze's glass style only accepts RoundedCornerShape, so other shapes (for example CircleShape)
+            // are applied by clipping the glass instead.
+            val roundedShape = glassShape as? RoundedCornerShape
+            Modifier
+                .hazeGlass(
+                    input = HazeInput.Sources(hazeState),
+                    style =
+                        GlassStyle.regular.then {
+                            tint(mixed.copy(alpha = tintAlpha))
+                            if (roundedShape != null) shape(roundedShape)
+                        },
+                ).clip(glassShape)
         } else {
             Modifier.background(mixed.copy(alpha = tintAlpha), shape)
         }

@@ -1,3 +1,13 @@
+---v14.0.2
+# Build fix and package rename
+Metrolist 14.0.2 fixes the Android build and changes the Android app ID to `com.sukizy`.
+
+## Fixes
+- Fixed the Android build failing in the glass surface shape code
+
+## Changes
+- Android application ID changed from `com.jiko.sukizy` to `com.sukizy`. This is a new app for Android, so it installs alongside older builds.
+
 ---v14.0.1
 # Fixes after 14.0.0
 Metrolist 14.0.1 fixes upgrades from 13.x, playback and desktop stability, and brings back several 13.x features.
