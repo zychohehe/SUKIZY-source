@@ -45,8 +45,6 @@ object GlassBlurPolicy {
     var scrolling by mutableStateOf(false)
         private set
 
-    // Distinct JVM name: the property's private setter would otherwise clash with setScrolling(Z)V.
-    @JvmName("updateScrolling")
     fun setScrolling(value: Boolean) {
         scrolling = value
     }
