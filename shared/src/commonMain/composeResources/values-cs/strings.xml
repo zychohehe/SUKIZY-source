@@ -256,7 +256,7 @@
     <string name="about">O aplikaci</string>
     <string name="credits_android_lead">Hlavní Android vývojář</string>
     <string name="credits_desktop_lead">Hlavní vývojář desktopové verze</string>
-    <string name="credits_creator">Tvůrce Metrolistu</string>
+    <string name="credits_creator">Tvůrce SUKIZYu</string>
     <string name="credits_android_developer">Vývojář pro Android</string>
     <string name="credits_desktop_developer">Vývojář desktopové verze</string>
     <string name="credits_macos_developer">Vývojář pro macOS</string>
@@ -268,7 +268,7 @@
     <string name="open_github_profile">Otevřít GitHub profil</string>
     <string name="sponsor_developer">Podpořit vývojáře</string>
     <string name="credits_license_name">Licence</string>
-    <string name="credits_license_desc">Metrolist je licencován pod GPL-3.0</string>
+    <string name="credits_license_desc">SUKIZY je licencován pod GPL-3.0</string>
     <string name="credits_collaborators_section">Tým Metrolist hrdinů</string>
     <string name="devmode_already_active" translatable="true">Vývojářský režim je již aktivní</string>
     <string name="discord_enable_rich_presence">Discord Rich Presence</string>
@@ -313,7 +313,7 @@
     <string name="settings_open_supported_links_title">Otevřít podporované odkazy</string>
     <string name="settings_updates_title">Aktualizace</string>
     <string name="settings_updates_available_description">Nová aktualizace Metrolistu je dostupná</string>
-    <string name="settings_about_title">O aplikaci Metrolist</string>
+    <string name="settings_about_title">O aplikaci SUKIZY</string>
     <string name="settings_search_placeholder">Prohledávat nastavení</string>
     <string name="settings_search_no_results">Nenalezena žádná nastavení</string>
     <string name="settings_search_no_results_desc">Žádné shody pro %1$s</string>

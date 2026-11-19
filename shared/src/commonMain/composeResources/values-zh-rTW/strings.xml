@@ -227,7 +227,7 @@
     <string name="about">關於</string>
     <string name="credits_android_lead">Android 開發主管</string>
     <string name="credits_desktop_lead">桌面開發主管</string>
-    <string name="credits_creator">Metrolist 創作者</string>
+    <string name="credits_creator">SUKIZY 創作者</string>
     <string name="credits_android_developer">Android 開發人員</string>
     <string name="credits_desktop_developer">桌面開發人員</string>
     <string name="credits_macos_developer">macOS 開發人員</string>
@@ -239,7 +239,7 @@
     <string name="open_github_profile">開啟GitHub個人資料</string>
     <string name="sponsor_developer">贊助開發者</string>
     <string name="credits_license_name">授權</string>
-    <string name="credits_license_desc">Metrolist 依據 GPL-3.0 授權</string>
+    <string name="credits_license_desc">SUKIZY 依據 GPL-3.0 授權</string>
     <string name="devmode_already_active" translatable="true">開發模式已啟用</string>
     <string name="discord_enable_rich_presence">啟用 Discord Rich Presence</string>
     <string name="discord_listen_to_metrolist">用 Metrolist 收聽</string>
@@ -714,7 +714,7 @@
     <string name="settings_open_supported_links_title">開啟支緩的連結</string>
     <string name="settings_updates_title">更新</string>
     <string name="settings_updates_available_description">新的 Metrolist 更新可供下載</string>
-    <string name="settings_about_title">關於 Metrolist</string>
+    <string name="settings_about_title">關於 SUKIZY</string>
     <string name="settings_search_placeholder">搜尋設定</string>
     <string name="settings_search_no_results">找不到該設定</string>
     <string name="settings_search_no_results_desc">找不到相對%1$s的項目</string>

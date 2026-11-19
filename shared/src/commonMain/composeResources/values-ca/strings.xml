@@ -243,7 +243,7 @@
     <string name="about">Quant a</string>
     <string name="credits_android_lead">Desenvolupador principal d’Android</string>
     <string name="credits_desktop_lead">Desenvolupador principal d’escriptori</string>
-    <string name="credits_creator">Creador de Metrolist</string>
+    <string name="credits_creator">Creador de SUKIZY</string>
     <string name="credits_android_developer">Desenvolupador d’Android</string>
     <string name="credits_desktop_developer">Desenvolupador d’escriptori</string>
     <string name="credits_macos_developer">Desenvolupador de macOS</string>
@@ -255,7 +255,7 @@
     <string name="open_github_profile">Obre el perfil de GitHub</string>
     <string name="sponsor_developer">Patrocina el desenvolupador</string>
     <string name="credits_license_name">Llicència</string>
-    <string name="credits_license_desc">Metrolist està sota la llicència GPL-3.0.</string>
+    <string name="credits_license_desc">SUKIZY està sota la llicència GPL-3.0.</string>
     <string name="devmode_already_active" translatable="true">El mode de desenvolupament ja està activat</string>
     <string name="discord_enable_rich_presence">Discord Rich Presence</string>
     <string name="discord_listen_to_metrolist">Escolta Metrolist</string>
@@ -299,7 +299,7 @@
     <string name="settings_open_supported_links_title">Obre enllaços compatibles</string>
     <string name="settings_updates_title">Actualitzacions</string>
     <string name="settings_updates_available_description">Hi ha una nova actualització de Metrolist disponible</string>
-    <string name="settings_about_title">Quant a Metrolist</string>
+    <string name="settings_about_title">Quant a SUKIZY</string>
     <string name="settings_search_placeholder">Cerca als paràmetres</string>
     <string name="settings_search_no_results">No s’han trobat paràmetres</string>
     <string name="settings_search_no_results_desc">No s’han trobat coincidències per %1$s</string>

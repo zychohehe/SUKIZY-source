@@ -256,7 +256,7 @@
     <string name="about">О приложении</string>
     <string name="credits_android_lead">Ведущий Android-разработчик</string>
     <string name="credits_desktop_lead">Ведущий десктоп-разработчик</string>
-    <string name="credits_creator">Создатель Metrolist</string>
+    <string name="credits_creator">Создатель SUKIZY</string>
     <string name="credits_android_developer">Android-разработчик</string>
     <string name="credits_desktop_developer">Десктоп-разработчик</string>
     <string name="credits_macos_developer">macOS-разработчик</string>
@@ -268,7 +268,7 @@
     <string name="open_github_profile">Открыть GitHub</string>
     <string name="sponsor_developer">Спонсировать разработчика</string>
     <string name="credits_license_name">Лицензия</string>
-    <string name="credits_license_desc">Metrolist распространяется под лицензией GPL-3.0</string>
+    <string name="credits_license_desc">SUKIZY распространяется под лицензией GPL-3.0</string>
     <string name="devmode_already_active" translatable="true">Режим разработчика уже активен</string>
     <string name="discord_enable_rich_presence">Discord Rich Presence</string>
     <string name="discord_listen_to_metrolist">Слушает в Metrolist</string>
@@ -312,7 +312,7 @@
     <string name="settings_open_supported_links_title">Открывать поддерживаемые ссылки</string>
     <string name="settings_updates_title">Обновления</string>
     <string name="settings_updates_available_description">Доступно новое обновление Metrolist</string>
-    <string name="settings_about_title">О Metrolist</string>
+    <string name="settings_about_title">О SUKIZY</string>
     <string name="settings_search_placeholder">Поиск настроек</string>
     <string name="settings_search_no_results">Настройки не найдены</string>
     <string name="settings_search_no_results_desc">Нет совпадений для %1$s</string>

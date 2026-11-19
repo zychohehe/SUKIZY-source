@@ -255,7 +255,7 @@
     <string name="about">O aplikaciji</string>
     <string name="credits_android_lead">Glavni razvijalec za Android</string>
     <string name="credits_desktop_lead">Glavni razvijalec za računalnik</string>
-    <string name="credits_creator">Ustvarjalec Metrolista</string>
+    <string name="credits_creator">Ustvarjalec SUKIZYa</string>
     <string name="credits_android_developer">Razvijalec za Android</string>
     <string name="credits_desktop_developer">Razvijalec za računalnik</string>
     <string name="credits_macos_developer">macOS razvijalec</string>
@@ -267,7 +267,7 @@
     <string name="open_github_profile">Odpri GitHub profil</string>
     <string name="sponsor_developer">Sponzoriraj razvijalca</string>
     <string name="credits_license_name">Licenca</string>
-    <string name="credits_license_desc">Metrolist je licenciran pod licenco GPL-3.0.</string>
+    <string name="credits_license_desc">SUKIZY je licenciran pod licenco GPL-3.0.</string>
     <string name="devmode_already_active" translatable="true">Način za razvijalce je že aktiven</string>
     <string name="discord_enable_rich_presence">Omogoči Discord Rich Presence</string>
     <string name="discord_listen_to_metrolist">Poslušajte Metrolist</string>

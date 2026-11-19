@@ -239,7 +239,7 @@
     <string name="about">గురించి</string>
     <string name="credits_android_lead">Android ముఖ్య డెవలపర్</string>
     <string name="credits_desktop_lead">Desktop ముఖ్య డెవలపర్</string>
-    <string name="credits_creator">Metrolist సృష్టికర్త</string>
+    <string name="credits_creator">SUKIZY సృష్టికర్త</string>
     <string name="credits_android_developer">Android డెవలపర్</string>
     <string name="credits_desktop_developer">డెస్కటాప్ డెవలపర్</string>
     <string name="credits_macos_developer">macOS డెవలపర్</string>
@@ -251,7 +251,7 @@
     <string name="open_github_profile">GitHub ప్రొఫైల్‌ను తీయండి</string>
     <string name="sponsor_developer">డెవలపర్‌కి మద్దతు ఇవ్వండి</string>
     <string name="credits_license_name">అనుమతి</string>
-    <string name="credits_license_desc">GPL-3.0 Metrolist ని అనుమతించింది.</string>
+    <string name="credits_license_desc">GPL-3.0 SUKIZY ని అనుమతించింది.</string>
     <string name="devmode_already_active" translatable="true">డెవలపర్ మోడ్ ఇప్పటికే పని చేస్తోంది</string>
     <string name="discord_enable_rich_presence">Discord Rich Presence</string>
     <string name="discord_listen_to_metrolist">Metrolist ని వినండీ</string>
@@ -294,7 +294,7 @@
     <string name="settings_open_supported_links_title">మద్దతు ఉన్న లింకులను తెరవండి</string>
     <string name="settings_updates_title">తాజాపరచులు</string>
     <string name="settings_updates_available_description">కొత్త Metrolist తాజాపరుచు వచ్చింది</string>
-    <string name="settings_about_title">Metrolist గురించి</string>
+    <string name="settings_about_title">SUKIZY గురించి</string>
     <string name="settings_search_placeholder">సెట్టింగ్‌లను వెతకండి</string>
     <string name="settings_search_no_results">సెట్టింగ్‌లు ఏవీ దొరకలేదు</string>
     <string name="settings_search_no_results_desc">%1$s కోసం ఏవీ దోరకలేదు</string>

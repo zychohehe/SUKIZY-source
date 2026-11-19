@@ -721,7 +721,7 @@
     <!-- Translators: Label for credits desktop lead in the About screen. -->
     <string name="credits_desktop_lead">Lead desktop developer</string>
     <!-- Translators: Label for credits creator in the About screen. -->
-    <string name="credits_creator">Creator of Metrolist</string>
+    <string name="credits_creator">Creator of SUKIZY</string>
     <!-- Translators: Heading for Rich Presence in the Discord integration. -->
     <string name="discord_rpc_title" translatable="false">Discord Rich Presence</string>
     <!-- Translators: Label for credits android developer in the About screen. -->
@@ -760,7 +760,7 @@
     <!-- Translators: Label for credits license name in the About screen. -->
     <string name="credits_license_name">License</string>
     <!-- Translators: Supporting text beneath the credits license option in the About screen. -->
-    <string name="credits_license_desc">Metrolist is licensed under GPL-3.0</string>
+    <string name="credits_license_desc">SUKIZY is licensed under GPL-3.0</string>
     <!-- Translators: Confirmation prompt for wanna play favorite song; retained for translation compatibility but not currently referenced by app code. -->
     <!-- Translators: Message explaining yeah; retained for translation compatibility but not currently referenced by app code. -->
     <!-- Translators: Label for credits collaborators section in the About screen. -->
@@ -885,7 +885,7 @@
     <!-- Translators: Supporting text beneath the available option in the settings. -->
     <string name="settings_updates_available_description">A new Metrolist update is available</string>
     <!-- Translators: Heading for about in the settings. -->
-    <string name="settings_about_title">About Metrolist</string>
+    <string name="settings_about_title">About SUKIZY</string>
     <!-- Translators: Heading for devtools in the settings and app-wide dialogs. -->
     <string name="devtools_title" translatable="false">Devtools</string>
     <!-- Translators: Label for devtools enabled in the About screen. -->

@@ -21,7 +21,6 @@ import com.metrolist.shared.generated.resources.app_name
 import com.metrolist.shared.generated.resources.logo
 import com.metrolist.shared.generated.resources.youtube_music
 import com.metrolist.shared.state.GlobalYouTubeRepository
-import com.metrolist.shared.ui.screens.AboutCommunityLinkKind
 import com.metrolist.shared.ui.screens.AboutScreen
 import com.metrolist.shared.ui.settings.LocalSettingsPageHasTopBar
 import kotlinx.coroutines.launch
@@ -49,11 +48,7 @@ fun AndroidAboutScreen(
         bottomInset = miniPlayerInset,
         onNavigateBack = onNavigateBack.takeUnless { LocalSettingsPageHasTopBar.current },
         onOpenCommunityLink = { link ->
-            if (link.kind == AboutCommunityLinkKind.DISCORD) {
-                runCatching { context.openDiscordUrl(link.url) }
-            } else {
-                runCatching { uriHandler.openUri(link.url) }
-            }
+            runCatching { uriHandler.openUri(link.url) }
         },
         onDevtoolsUnlocked = onDevtoolsUnlocked,
         onPlayFavoriteSong =

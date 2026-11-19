@@ -240,7 +240,7 @@
     <string name="about">Tietoja</string>
     <string name="credits_android_lead">Androidin johtava kehittäjä</string>
     <string name="credits_desktop_lead">Tietokoneversion johtava kehittäjä</string>
-    <string name="credits_creator">Metrolistin luoja</string>
+    <string name="credits_creator">SUKIZYin luoja</string>
     <string name="credits_android_developer">Android-kehittäjä</string>
     <string name="credits_desktop_developer">Tietokoneversion kehittäjä</string>
     <string name="credits_macos_developer">macOS-kehittäjä</string>
@@ -252,7 +252,7 @@
     <string name="open_github_profile">GitHub-profiili</string>
     <string name="sponsor_developer">Sponsoroi kehittäjää</string>
     <string name="credits_license_name">Lisenssi</string>
-    <string name="credits_license_desc">Metrolist on GPL-3.0-lisenssin alainen.</string>
+    <string name="credits_license_desc">SUKIZY on GPL-3.0-lisenssin alainen.</string>
     <string name="devmode_already_active" translatable="true">Kehittäjätila on jo käytössä</string>
     <string name="discord_enable_rich_presence">Discord Rich Presence</string>
     <string name="discord_listen_to_metrolist">Kuuntele Metrolistillä</string>
@@ -296,7 +296,7 @@
     <string name="settings_open_supported_links_title">Avaa tuetut linkit</string>
     <string name="settings_updates_title">Päivitykset</string>
     <string name="settings_updates_available_description">Uusi päivitys on saatavilla</string>
-    <string name="settings_about_title">Tietoja Metrolististä</string>
+    <string name="settings_about_title">Tietoja SUKIZYistä</string>
     <string name="settings_search_placeholder">Hae asetuksista</string>
     <string name="settings_search_no_results">Asetuksia ei löytynyt</string>
     <string name="settings_search_no_results_desc">Haulla %1$s ei löytynyt mitään</string>

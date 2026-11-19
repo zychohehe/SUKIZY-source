@@ -240,7 +240,7 @@
     <string name="about">Über</string>
     <string name="credits_android_lead">Lead Android-Entwickler</string>
     <string name="credits_desktop_lead">Lead Desktop-Entwickler</string>
-    <string name="credits_creator">Ersteller von Metrolist</string>
+    <string name="credits_creator">Ersteller von SUKIZY</string>
     <string name="credits_android_developer">Android-Entwickler</string>
     <string name="credits_desktop_developer">Desktop-Entwickler</string>
     <string name="credits_macos_developer">macOS-Entwickler</string>
@@ -252,7 +252,7 @@
     <string name="open_github_profile">GitHub-Profil öffnen</string>
     <string name="sponsor_developer">Entwickler unterstützen</string>
     <string name="credits_license_name">Lizenz</string>
-    <string name="credits_license_desc">Metrolist ist unter GPL-3.0 lizenziert</string>
+    <string name="credits_license_desc">SUKIZY ist unter GPL-3.0 lizenziert</string>
     <string name="devmode_already_active" translatable="true">Entwicklermodus ist bereits aktiv</string>
     <string name="discord_enable_rich_presence">Discord Rich Presence</string>
     <string name="discord_listen_to_metrolist">Hören mit Metrolist</string>
@@ -296,7 +296,7 @@
     <string name="settings_open_supported_links_title">Öffne unterstützte Links</string>
     <string name="settings_updates_title">Updates</string>
     <string name="settings_updates_available_description">Ein neues Metrolist-Update ist verfügbar</string>
-    <string name="settings_about_title">Über Metrolist</string>
+    <string name="settings_about_title">Über SUKIZY</string>
     <string name="settings_search_placeholder">Einstellungen suchen</string>
     <string name="settings_search_no_results">Keine Einstellungen gefunden</string>
     <string name="settings_search_no_results_desc">Keine Ergebnisse für %1$s</string>

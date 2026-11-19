@@ -258,7 +258,7 @@
     <string name="settings_playback">Reprodukcija</string>
     <string name="settings_content_title">Sadržaj</string>
     <string name="settings_updates_title">Ažuriranja</string>
-    <string name="settings_about_title">O Metrolist-u</string>
+    <string name="settings_about_title">O SUKIZY-u</string>
     <string name="settings_search_placeholder">Pretraži podešavanja</string>
     <string name="back">Nazad</string>
     <string name="appearance_title">Izgled</string>
@@ -830,7 +830,7 @@
     <string name="device_connect_paired">Upareno</string>
     <string name="device_connect_device_type_ios">iOS</string>
     <string name="device_connect_available">Dostupno</string>
-    <string name="credits_creator">Kreator Metrolist-a</string>
+    <string name="credits_creator">Kreator SUKIZY-a</string>
     <string name="settings_color_hex">Hex boja</string>
     <string name="startup_error_title">Грешка при покретању апликације Metrolist</string>
     <string name="lyrics_show_translations">Prikaži prevode</string>
@@ -1161,7 +1161,7 @@
     <string name="credits_multiplatform_developer">Multiplatformski programer</string>
     <string name="credits_lyrics_ui_services">Interfejs za tekstove pesama i servisi</string>
     <string name="open_github_profile">Otvori GitHub profil</string>
-    <string name="credits_license_desc">Metrolist je licenciran pod GPL-3.0</string>
+    <string name="credits_license_desc">SUKIZY je licenciran pod GPL-3.0</string>
     <string name="credits_collaborators_section">Saradnici</string>
     <string name="credits_leads_section">Vodiči</string>
     <string name="credits_creator_section">Autor</string>

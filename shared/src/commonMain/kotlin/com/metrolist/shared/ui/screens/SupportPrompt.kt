@@ -75,7 +75,6 @@ internal object SupportPromptSchedule {
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
 fun SupportPrompt() {
-    var visible by remember { mutableStateOf(SupportPromptSchedule.claimLaunch()) }
     val uriHandler = LocalUriHandler.current
     val developers =
         remember {
@@ -84,6 +83,8 @@ fun SupportPrompt() {
                     AboutContributors.all.firstOrNull { it.githubHandle == handle && it.sponsorUrl != null }
                 }.shuffled()
         }
+    // SUKIZY has no sponsor pages, so the prompt stays hidden (and does not count launches) when nobody is listed.
+    var visible by remember { mutableStateOf(developers.isNotEmpty() && SupportPromptSchedule.claimLaunch()) }
     PopupVisibility(visible = visible) {
         AlertDialog(
             onDismissRequest = { visible = false },

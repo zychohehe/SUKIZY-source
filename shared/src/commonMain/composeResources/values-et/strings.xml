@@ -240,7 +240,7 @@
     <string name="about">Rakenduse teave</string>
     <string name="credits_android_lead">Pea androidi arendaja</string>
     <string name="credits_desktop_lead">Pea arvuti arendaja</string>
-    <string name="credits_creator">Metrolisti autor</string>
+    <string name="credits_creator">SUKIZYi autor</string>
     <string name="credits_android_developer">Androidi arendaja</string>
     <string name="credits_desktop_developer">Arvuti arendaja</string>
     <string name="credits_macos_developer">MacOS arendaja</string>
@@ -252,7 +252,7 @@
     <string name="open_github_profile">Ava GitHub\u0027i profiil</string>
     <string name="sponsor_developer">Sponsoreeri arendajat</string>
     <string name="credits_license_name">Litsents</string>
-    <string name="credits_license_desc">Metrolist on litsentsitud GPL-3.0 all</string>
+    <string name="credits_license_desc">SUKIZY on litsentsitud GPL-3.0 all</string>
     <string name="devmode_already_active" translatable="true">Arendajarežiim on juba aktiivne</string>
     <string name="discord_enable_rich_presence">Luba Discord'i Rich Presence</string>
     <string name="discord_listen_to_metrolist">Kuula Metrolist\u0027i</string>

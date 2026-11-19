@@ -225,7 +225,7 @@
     <string name="about">Tentang</string>
     <string name="credits_android_lead">Pengembang utama Android</string>
     <string name="credits_desktop_lead">Pengembang utama desktop</string>
-    <string name="credits_creator">Pencipta Metrolist</string>
+    <string name="credits_creator">Pencipta SUKIZY</string>
     <string name="credits_android_developer">Pengembang Android</string>
     <string name="credits_desktop_developer">Pengembang desktop</string>
     <string name="credits_macos_developer">Pengembang macOS</string>
@@ -236,7 +236,7 @@
     <string name="open_github_profile">Buka profil GitHub</string>
     <string name="sponsor_developer">Sponsor pengembang</string>
     <string name="credits_license_name">Lisensi</string>
-    <string name="credits_license_desc">Metrolist dilisensi di bawah GPL-3.0</string>
+    <string name="credits_license_desc">SUKIZY dilisensi di bawah GPL-3.0</string>
     <string name="devmode_already_active" translatable="true">Mode pengembang sudah aktif</string>
     <string name="discord_enable_rich_presence">Discord Rich Presence</string>
     <string name="discord_login_description">Hubungkan akun Discord Anda</string>
@@ -277,7 +277,7 @@
     <string name="settings_open_supported_links_title">Buka tautan yang didukung</string>
     <string name="settings_updates_title">Pembaruan</string>
     <string name="settings_updates_available_description">Pembaruan baru Metrolist tersedia</string>
-    <string name="settings_about_title">Tentang Metrolist</string>
+    <string name="settings_about_title">Tentang SUKIZY</string>
     <string name="settings_search_placeholder">Cari pengaturan</string>
     <string name="settings_search_no_results">Tidak ada pengaturan yang ditemukan</string>
     <string name="settings_search_no_results_desc">Tidak menemukan kecocokan untuk %1$s</string>

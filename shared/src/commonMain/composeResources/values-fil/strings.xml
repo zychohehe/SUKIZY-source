@@ -237,13 +237,13 @@
     <string name="about">Tungkol sa</string>
     <string name="credits_android_lead">Pangunahing Android developer</string>
     <string name="credits_desktop_lead">Pangunahing desktop developer</string>
-    <string name="credits_creator">Tagalikha ng Metrolist</string>
+    <string name="credits_creator">Tagalikha ng SUKIZY</string>
     <string name="credits_lyrics_ui_services">Liriko at mga serbisyo</string>
     <string name="credits_android_designer">Android designer</string>
     <string name="open_website">Buksan ang website</string>
     <string name="open_github_profile">Buksan ang GitHub profile</string>
     <string name="credits_license_name">Lisensya</string>
-    <string name="credits_license_desc">Lisensyado ang Metrolist sa ilalim ng GPL-3.0</string>
+    <string name="credits_license_desc">Lisensyado ang SUKIZY sa ilalim ng GPL-3.0</string>
     <string name="devmode_already_active" translatable="true">Devmode ay aktibo na</string>
     <string name="discord_enable_rich_presence">I-enable ang Discord Rich Presence</string>
     <string name="discord_listen_to_metrolist">Makinig sa Metrolist</string>
@@ -287,7 +287,7 @@
     <string name="settings_open_supported_links_title">Buksan ang mga supported na link</string>
     <string name="settings_updates_title">Mga update</string>
     <string name="settings_updates_available_description">May bagong update para sa Metrolist</string>
-    <string name="settings_about_title">Tungkol sa Metrolist</string>
+    <string name="settings_about_title">Tungkol sa SUKIZY</string>
     <string name="settings_search_placeholder">Maghanap sa settings</string>
     <string name="settings_search_no_results">Walang nakitang settings</string>
     <string name="settings_search_no_results_desc">Walang tugma para sa %1$s</string>

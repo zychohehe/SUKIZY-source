@@ -240,7 +240,7 @@
     <string name="about">Hum</string>
     <string name="credits_android_lead">Mukhya Android ka developer</string>
     <string name="credits_desktop_lead">Mukhya computer app developer</string>
-    <string name="credits_creator">Metrolist banane wale</string>
+    <string name="credits_creator">SUKIZY banane wale</string>
     <string name="credits_android_developer">Android ke developer</string>
     <string name="credits_desktop_developer">Computer app ke developer</string>
     <string name="credits_macos_developer">macOS ke developer</string>
@@ -252,7 +252,7 @@
     <string name="open_github_profile">Github ki profile khole</string>
     <string name="sponsor_developer">Developer ki madad kare</string>
     <string name="credits_license_name">License</string>
-    <string name="credits_license_desc">Metrolist GPL-3.0 license ke antargat aata hai.</string>
+    <string name="credits_license_desc">SUKIZY GPL-3.0 license ke antargat aata hai.</string>
     <string name="devmode_already_active" translatable="true">Devmode pehle se hi chaalu hai</string>
     <string name="discord_enable_rich_presence">Discord par dikhaye ki kya sun rahe hai</string>
     <string name="discord_listen_to_metrolist">Metrolist me sune</string>
@@ -296,7 +296,7 @@
     <string name="settings_open_supported_links_title">Samarthit link kholein</string>
     <string name="settings_updates_title">Badlaw</string>
     <string name="settings_updates_available_description">Metrolist ki ek nayi badlaw uplabdh hai</string>
-    <string name="settings_about_title">Metrolist ke baare me</string>
+    <string name="settings_about_title">SUKIZY ke baare me</string>
     <string name="settings_search_placeholder">Settings khoje</string>
     <string name="settings_search_no_results">Koi settings nahi mili</string>
     <string name="settings_search_no_results_desc">%1$s ke jaisi kuch nahi mili</string>

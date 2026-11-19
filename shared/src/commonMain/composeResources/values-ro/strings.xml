@@ -248,7 +248,7 @@
     <string name="about">Despre</string>
     <string name="credits_android_lead">Dezvoltator Android principal</string>
     <string name="credits_desktop_lead">Dezvoltator desktop principal</string>
-    <string name="credits_creator">Creatorul Metrolist</string>
+    <string name="credits_creator">Creatorul SUKIZY</string>
     <string name="credits_android_developer">Dezvoltator Android</string>
     <string name="credits_desktop_developer">Dezvoltator desktop</string>
     <string name="credits_macos_developer">Dezvoltator macOS</string>
@@ -260,7 +260,7 @@
     <string name="open_github_profile">Deschide profilul de GitHub</string>
     <string name="sponsor_developer">Sponsorizează dezvoltatorul</string>
     <string name="credits_license_name">Licență</string>
-    <string name="credits_license_desc">Metrolist este licențiat sub GPL-3.0</string>
+    <string name="credits_license_desc">SUKIZY este licențiat sub GPL-3.0</string>
     <string name="devmode_already_active" translatable="true">Modul dezvoltator este deja activat</string>
     <string name="discord_enable_rich_presence">Discord Rich Presence</string>
     <string name="discord_listen_to_metrolist">Ascultă pe Metrolist</string>
@@ -304,7 +304,7 @@
     <string name="settings_open_supported_links_title">Deschide linkurile acceptate</string>
     <string name="settings_updates_title">Actualizări</string>
     <string name="settings_updates_available_description">Este disponibilă o nouă actualizare pentru Metrolist</string>
-    <string name="settings_about_title">Despre Metrolist</string>
+    <string name="settings_about_title">Despre SUKIZY</string>
     <string name="settings_search_placeholder">Caută prin setări</string>
     <string name="settings_search_no_results">Nicio setare găsită</string>
     <string name="settings_search_no_results_desc">Nicio potrivire pentru %1$s</string>

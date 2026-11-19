@@ -629,7 +629,7 @@
     <string name="bottom_sheet_pane_title">Bảng dưới</string>
     <string name="credits_android_lead">Lập trình viên Android chính</string>
     <string name="credits_desktop_lead">Lập trình viên desktop chính</string>
-    <string name="credits_creator">Người tạo ra Metrolist</string>
+    <string name="credits_creator">Người tạo ra SUKIZY</string>
     <string name="credits_android_developer">Lập trình viên Android</string>
     <string name="credits_desktop_developer">Lập trình viên desktop</string>
     <string name="credits_multiplatform_developer">Lập trình viên đa nền tảng</string>
@@ -642,7 +642,7 @@
     <string name="open_github_profile">Mở trang GitHub</string>
     <string name="sponsor_developer">Tài trợ cho lập trình viên</string>
     <string name="credits_license_name">Giấy phép</string>
-    <string name="credits_license_desc">Metrolist được cấp phép theo GPL-3.0</string>
+    <string name="credits_license_desc">SUKIZY được cấp phép theo GPL-3.0</string>
     <string name="credits_collaborators_section">Cộng tác viên</string>
     <string name="credits_leads_section">Trưởng nhóm</string>
     <string name="credits_creator_section">Người tạo</string>
@@ -697,7 +697,7 @@
     <string name="settings_open_supported_links_title">Mở liên kết được hỗ trợ</string>
     <string name="settings_updates_title">Cập nhật</string>
     <string name="settings_updates_available_description">Đã có bản cập nhật Metrolist mới</string>
-    <string name="settings_about_title">Giới thiệu Metrolist</string>
+    <string name="settings_about_title">Giới thiệu SUKIZY</string>
     <string name="devtools_render_backend">Nền tảng kết xuất</string>
     <string name="devtools_render_backend_description">Thay đổi có hiệu lực sau khi khởi động lại. Ghi đè API kết xuất của môi trường và JVM được ưu tiên. Skiko có thể chuyển sang phương án khác nếu nền tảng đã chọn không khởi tạo được.</string>
     <string name="devtools_render_backend_auto">Tự động</string>

@@ -240,7 +240,7 @@
     <string name="about">बारेमा</string>
     <string name="credits_android_lead">मुख्य Android विकासकर्ता</string>
     <string name="credits_desktop_lead">मुख्य desktop विकासकर्ता</string>
-    <string name="credits_creator">Metrolist को सिर्जनाकर्ता</string>
+    <string name="credits_creator">SUKIZY को सिर्जनाकर्ता</string>
     <string name="credits_android_developer">Android विकासकर्ता</string>
     <string name="credits_desktop_developer">Desktop विकसकर्ता</string>
     <string name="credits_macos_developer">macOS विकासकर्ता</string>
@@ -296,7 +296,7 @@
     <string name="settings_open_supported_links_title">समर्थित लिन्कहरू खोल्नुहोस्</string>
     <string name="settings_updates_title">अपडेटहरू</string>
     <string name="settings_updates_available_description">नयाँ Metrolist अपडेट उपलब्ध छ</string>
-    <string name="settings_about_title">Metrolist बारेमा</string>
+    <string name="settings_about_title">SUKIZY बारेमा</string>
     <string name="settings_search_placeholder">सेटिङ्स खोज्नुहोस्</string>
     <string name="settings_search_no_results">कुनै सेटिङहरू भेटिएन</string>
     <string name="settings_search_no_results_desc">%1$sको लागि कुनै मिलान भेटिएन</string>

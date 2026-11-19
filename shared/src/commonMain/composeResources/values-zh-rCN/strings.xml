@@ -216,7 +216,7 @@
     <string name="preview">预览</string>
     <string name="about">关于</string>
     <string name="credits_desktop_lead">首席桌面开发者</string>
-    <string name="credits_creator">Metrolist 创建者</string>
+    <string name="credits_creator">SUKIZY 创建者</string>
     <string name="credits_desktop_developer">桌面开发者</string>
     <string name="credits_macos_developer">macOS 开发者</string>
     <string name="credits_lyrics_ui_services">歌词界面及服务</string>
@@ -225,7 +225,7 @@
     <string name="open_github_profile">打开 GitHub 个人资料</string>
     <string name="sponsor_developer">赞助开发者</string>
     <string name="credits_license_name">许可</string>
-    <string name="credits_license_desc">Metrolist 采用 GPL-3.0 许可证授权。</string>
+    <string name="credits_license_desc">SUKIZY 采用 GPL-3.0 许可证授权。</string>
     <string name="devmode_already_active" translatable="true">开发模式已激活</string>
     <string name="discord_listen_to_metrolist">收听 Metrolist</string>
     <string name="discord_login_description">连接您的 Discord 账号</string>
@@ -266,7 +266,7 @@
     <string name="settings_open_supported_links_title">打开支持的链接</string>
     <string name="settings_updates_title">更新</string>
     <string name="settings_updates_available_description">有新的 Metrolist 更新可用</string>
-    <string name="settings_about_title">关于 Metrolist</string>
+    <string name="settings_about_title">关于 SUKIZY</string>
     <string name="settings_search_placeholder">搜索设置</string>
     <string name="settings_search_no_results">未找到设置</string>
     <string name="settings_search_no_results_desc">未找到 %1$s 的匹配项</string>

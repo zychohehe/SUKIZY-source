@@ -236,7 +236,7 @@
     <string name="about">Om</string>
     <string name="credits_android_lead">Ledande Android-utvecklare</string>
     <string name="credits_desktop_lead">Ledande skrivbordsutvecklare</string>
-    <string name="credits_creator">Skapare av Metrolist</string>
+    <string name="credits_creator">Skapare av SUKIZY</string>
     <string name="credits_android_developer">Android-utvecklare</string>
     <string name="credits_desktop_developer">Skrivbordsutvecklare</string>
     <string name="credits_macos_developer">macOS-utvecklare</string>
@@ -248,7 +248,7 @@
     <string name="open_github_profile">Öppna GitHub-profil</string>
     <string name="sponsor_developer">Stöd utvecklaren</string>
     <string name="credits_license_name">Licens</string>
-    <string name="credits_license_desc">Metrolist är licensierad under GPL-3.0-licensen.</string>
+    <string name="credits_license_desc">SUKIZY är licensierad under GPL-3.0-licensen.</string>
     <string name="devmode_already_active" translatable="true">Utvecklarläget är redan aktiverat</string>
     <string name="discord_enable_rich_presence">Aktivera Discord Rich Presence</string>
     <string name="discord_listen_to_metrolist">Lyssna på Metrolist</string>
@@ -292,7 +292,7 @@
     <string name="settings_open_supported_links_title">Öppna stödda länkar</string>
     <string name="settings_updates_title">Uppdateringar</string>
     <string name="settings_updates_available_description">En ny uppdatering för Metrolist finns tillgänglig</string>
-    <string name="settings_about_title">Om Metrolist</string>
+    <string name="settings_about_title">Om SUKIZY</string>
     <string name="settings_search_placeholder">Sök i inställningar</string>
     <string name="settings_search_no_results">Inga inställningar hittades</string>
     <string name="settings_search_no_results_desc">Inga träffar för %1$s</string>

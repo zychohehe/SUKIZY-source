@@ -4,13 +4,12 @@ package com.metrolist.shared.ui.navigation
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateColorAsState
-import androidx.compose.animation.core.spring
 import androidx.compose.animation.expandHorizontally
-import androidx.compose.animation.expandVertically
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.shrinkHorizontally
-import androidx.compose.animation.shrinkVertically
+import androidx.compose.animation.slideInVertically
+import androidx.compose.animation.slideOutVertically
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -49,6 +48,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.metrolist.shared.ui.components.focusOutline
+import com.metrolist.shared.ui.glass.IosMotion
 import com.metrolist.shared.ui.glass.glassNavPill
 import com.metrolist.shared.ui.glass.glassSelectionIndicator
 
@@ -56,7 +56,6 @@ val LocalFloatingNavBar = compositionLocalOf { false }
 
 private val FloatingBarHeight = 64.dp
 private val FloatingItemHeight = 48.dp
-private val NavSpring = spring<Float>(dampingRatio = 0.9f, stiffness = 700f)
 
 @Composable
 internal fun <T> FloatingNavigation(
@@ -73,16 +72,10 @@ internal fun <T> FloatingNavigation(
     AnimatedVisibility(
         visible = navigationVisible,
         modifier = modifier,
-        enter =
-            expandVertically(
-                animationSpec = spring(dampingRatio = 0.9f, stiffness = 700f),
-                expandFrom = Alignment.Bottom,
-            ),
-        exit =
-            shrinkVertically(
-                animationSpec = spring(dampingRatio = 0.9f, stiffness = 700f),
-                shrinkTowards = Alignment.Bottom,
-            ),
+        // Slide and fade run on the graphics layer, so the bar never re-measures (and never resizes the
+        // screen content) frame by frame the way expand/shrink does.
+        enter = slideInVertically(animationSpec = IosMotion.placement(), initialOffsetY = { it }) + fadeIn(IosMotion.fade()),
+        exit = slideOutVertically(animationSpec = IosMotion.placement(), targetOffsetY = { it }) + fadeOut(IosMotion.fadeFast()),
     ) {
         FloatingNavigationBar(
             items = items,
@@ -200,8 +193,8 @@ private fun <T> FloatingNavigationItem(
     ) {
         AnimatedVisibility(
             visible = selected,
-            enter = fadeIn() + expandHorizontally(spring(dampingRatio = 0.9f, stiffness = 700f)),
-            exit = fadeOut() + shrinkHorizontally(spring(dampingRatio = 0.9f, stiffness = 700f)),
+            enter = fadeIn(IosMotion.fade()) + expandHorizontally(IosMotion.sizeSpec()),
+            exit = fadeOut(IosMotion.fadeFast()) + shrinkHorizontally(IosMotion.sizeSpec()),
         ) {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Icon(imageVector = item.selectedIcon, contentDescription = null, tint = contentColor)
