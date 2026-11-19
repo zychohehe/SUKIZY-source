@@ -14,7 +14,7 @@ object IosMotion {
     fun fadeFast(): FiniteAnimationSpec<Float> = tween(durationMillis = 90)
 
     fun placement(): FiniteAnimationSpec<IntOffset> =
-        spring(dampingRatio = Spring.DampingRatioNoBouncy, stiffness = Spring.StiffnessMediumLow, visibilityThreshold = IntOffset.VisibilityThreshold)
+        spring(dampingRatio = Spring.DampingRatioNoBouncy, stiffness = Spring.StiffnessMediumLow)
 
     fun sizeSpec(): FiniteAnimationSpec<IntSize> =
         spring(dampingRatio = Spring.DampingRatioNoBouncy, stiffness = Spring.StiffnessMediumLow, visibilityThreshold = IntSize(1, 1))
