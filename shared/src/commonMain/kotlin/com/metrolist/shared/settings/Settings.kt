@@ -319,7 +319,7 @@ class Settings(
     var themeMode by preference(ThemeMode.AUTO)
     var autoPureBlack by preference(AutoPureBlackKey, false)
     var selectedThemeColor by preference(0L)
-    var themePaletteStyle by preference(ThemePaletteStyle.TONAL_SPOT)
+    var themePaletteStyle by preference(ThemePaletteStyle.VIBRANT)
     var matugenTheme by preference(MatugenThemeKey, false)
 
     var appFont by preference(FontOption.SYSTEM)

@@ -1,3 +1,15 @@
+---v14.0.3
+# Smoother Home and Library
+Metrolist 14.0.3 makes Home and Library scroll with less work per frame and changes the default palette style.
+
+## Performance
+- The glass backdrop caches its gradients instead of rebuilding them on every draw
+- Library sorting preferences are decoded once per change instead of on every redraw
+- Baseline profile now covers Home and Library scrolling and the glass navigation
+
+## Changes
+- Default theme palette style is now Vibrant. Existing choices are kept.
+
 ---v14.0.2
 # Build fix and package rename
 Metrolist 14.0.2 fixes the Android build and changes the Android app ID to `com.sukizy`.

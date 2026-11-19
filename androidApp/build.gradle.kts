@@ -255,7 +255,7 @@ android {
         applicationId = "com.sukizy"
         minSdk = 24
         targetSdk = 37
-        versionCode = 156
+        versionCode = 157
         versionName = appVersion
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
