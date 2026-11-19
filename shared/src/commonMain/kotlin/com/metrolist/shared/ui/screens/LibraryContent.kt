@@ -42,6 +42,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.ToggleButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -126,6 +127,7 @@ import com.metrolist.shared.ui.components.libraryArtwork
 import com.metrolist.shared.ui.components.libraryCover
 import com.metrolist.shared.ui.components.menuAnchorSemantics
 import com.metrolist.shared.ui.components.rememberItemPlayback
+import com.metrolist.shared.ui.glass.GlassBlurPolicy
 import com.metrolist.shared.ui.haptics.HapticEvent
 import com.metrolist.shared.ui.haptics.rememberMetrolistHaptics
 import com.metrolist.shared.ui.icons.MetrolistIcons
@@ -389,6 +391,9 @@ fun LibraryContent(
         }
         val currentGridView = isGridView
         val retainedScrollState = scrollState
+        val gridScrolling = scrollState.isScrollInProgress
+        LaunchedEffect(gridScrolling) { GlassBlurPolicy.setScrolling(gridScrolling) }
+        DisposableEffect(Unit) { onDispose { GlassBlurPolicy.setScrolling(false) } }
         Crossfade(
             targetState = isGridView,
             animationSpec = MaterialTheme.motionScheme.fastEffectsSpec(),

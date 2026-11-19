@@ -46,6 +46,7 @@ import androidx.compose.material3.carousel.CarouselItemDrawInfo
 import androidx.compose.material3.carousel.HorizontalMultiBrowseCarousel
 import androidx.compose.material3.carousel.rememberCarouselState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.State
 import androidx.compose.runtime.derivedStateOf
@@ -111,6 +112,7 @@ import com.metrolist.shared.ui.components.YTGridItem
 import com.metrolist.shared.ui.components.YTListItem
 import com.metrolist.shared.ui.components.carouselArtworkShape
 import com.metrolist.shared.ui.components.rememberItemPlayback
+import com.metrolist.shared.ui.glass.GlassBlurPolicy
 import com.metrolist.shared.ui.utils.DragScrollableColumn
 import com.metrolist.shared.ui.utils.carouselScroll
 import com.metrolist.shared.ui.utils.desktopArrowScroll
@@ -220,6 +222,9 @@ fun HomeContent(
         }
     val localShelfCache = remember { HomeShelfCache() }
     val paginationScrollConnection = rememberHomePagination(uiState, listState, onLoadMore)
+    val listScrolling = listState.isScrollInProgress
+    LaunchedEffect(listScrolling) { GlassBlurPolicy.setScrolling(listScrolling) }
+    DisposableEffect(Unit) { onDispose { GlassBlurPolicy.setScrolling(false) } }
     BoxWithConstraints(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.TopCenter) {
         val isWide = maxWidth > 840.dp
         val effectiveShelves =

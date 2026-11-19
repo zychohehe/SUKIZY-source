@@ -14,6 +14,9 @@ import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -34,6 +37,19 @@ import dev.chrisbanes.haze.glass.GlassStyle
 import dev.chrisbanes.haze.glass.hazeGlass
 import dev.chrisbanes.haze.hazeSource
 
+/**
+ * Pauses live blur while a list scrolls. The glass keeps its tint, so the look stays the same but frames stay cheap.
+ * Lists set [scrolling] from their scroll state.
+ */
+object GlassBlurPolicy {
+    var scrolling by mutableStateOf(false)
+        private set
+
+    fun setScrolling(value: Boolean) {
+        scrolling = value
+    }
+}
+
 /** Shared blur source. Null means no live blur is available and glass falls back to a denser tint. */
 val LocalGlassHazeState = staticCompositionLocalOf<HazeState?> { null }
 
@@ -43,7 +59,7 @@ val LocalGlassBlurSupported = staticCompositionLocalOf { false }
 /** Marks the content that glass surfaces blur, and paints a soft backdrop so the glass has color to pick up. */
 @Composable
 fun Modifier.glassSource(baseColor: Color): Modifier {
-    val state = LocalGlassHazeState.current
+    val state = LocalGlassHazeState.current.takeUnless { GlassBlurPolicy.scrolling }
     val scheme = MaterialTheme.colorScheme
     val primary = scheme.primary
     val tertiary = scheme.tertiary
@@ -92,7 +108,7 @@ fun Modifier.glassSurface(
     val scheme = MaterialTheme.colorScheme
     val dark = scheme.surface.luminance() < 0.5f
     val hazeState = LocalGlassHazeState.current
-    val blurred = liveBlur && hazeState != null && LocalGlassBlurSupported.current
+    val blurred = liveBlur && hazeState != null && LocalGlassBlurSupported.current && !GlassBlurPolicy.scrolling
     val base = scheme.surfaceContainerHigh
     val mixed = if (accent.isSpecified) lerp(base, accent, 0.30f) else base
     // Without live blur the tint must be dense enough to keep text readable on any content.

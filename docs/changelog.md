@@ -1,8 +1,9 @@
----v14.0.3
+---v14.0.4
 # Smoother Home and Library
-Metrolist 14.0.3 makes Home and Library scroll with less work per frame and changes the default palette style.
+Metrolist 14.0.4 makes Home and Library scroll with less work per frame and changes the default palette style.
 
 ## Performance
+- Live blur on the navigation bar and top bar pauses while a list scrolls, and the glass keeps its tint
 - The glass backdrop caches its gradients instead of rebuilding them on every draw
 - Library sorting preferences are decoded once per change instead of on every redraw
 - Baseline profile now covers Home and Library scrolling and the glass navigation
