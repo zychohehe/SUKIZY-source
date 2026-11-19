@@ -98,6 +98,16 @@ jobs:
           fi
           ls -lh build-apks
 
+      - name: Verify APK archives
+        shell: bash
+        run: |
+          set -euo pipefail
+          for apk in build-apks/*.apk; do
+            # An APK is a zip file; a corrupt entry here would break installs and extraction.
+            unzip -tq "$apk"
+            sha256sum "$apk"
+          done
+
       - name: Upload APKs
         uses: actions/upload-artifact@v4
         with:
