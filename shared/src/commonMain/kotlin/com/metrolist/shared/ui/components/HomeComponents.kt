@@ -31,6 +31,7 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.metrolist.shared.generated.resources.Res
 import com.metrolist.shared.generated.resources.see_all
 import com.metrolist.shared.ui.components.images.AsyncImage
@@ -85,8 +86,10 @@ fun SectionTitle(
     onShuffleClick: (() -> Unit)? = null,
     isWide: Boolean = false,
 ) {
-    val titleStyle = if (isWide) MaterialTheme.typography.headlineMediumEmphasized else MaterialTheme.typography.headlineSmallEmphasized
-    val rowHeight = if (isWide || label != null) 60.dp else 50.dp
+    val titleStyle =
+        (if (isWide) MaterialTheme.typography.headlineMedium else MaterialTheme.typography.titleLarge)
+            .copy(fontWeight = FontWeight.Bold, letterSpacing = (-0.3).sp)
+    val rowHeight = if (isWide || label != null) 56.dp else 44.dp
 
     Row(
         modifier =
@@ -95,7 +98,7 @@ fun SectionTitle(
                 .heightIn(min = rowHeight)
                 .then(
                     if (onClick != null) {
-                        Modifier.clip(RoundedCornerShape(12.dp)).clickable(
+                        Modifier.clip(RoundedCornerShape(14.dp)).clickable(
                             role = Role.Button,
                             onClickLabel = seeAllLabel ?: stringResource(Res.string.see_all),
                             onClick = onClick,
@@ -125,11 +128,11 @@ fun SectionTitle(
             if (label != null) {
                 Text(
                     text = label,
-                    style = MaterialTheme.typography.titleSmall,
+                    style = MaterialTheme.typography.labelMedium,
                     fontWeight = FontWeight.Medium,
                     maxLines = 2,
                     overflow = TextOverflow.Ellipsis,
-                    color = MaterialTheme.colorScheme.onSurface,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
 
@@ -138,7 +141,7 @@ fun SectionTitle(
                 style = titleStyle,
                 maxLines = 2,
                 overflow = TextOverflow.Ellipsis,
-                color = MaterialTheme.colorScheme.primary,
+                color = MaterialTheme.colorScheme.onSurface,
             )
         }
 
@@ -185,9 +188,9 @@ private fun SectionActionButton(
     onClick: (() -> Unit)? = null,
     isWide: Boolean = false,
 ) {
-    val boxSize = if (isWide) 56.dp else 48.dp
-    val surfaceSize = Modifier.size(40.dp, 32.dp)
-    val iconSize = 20.dp
+    val boxSize = if (isWide) 48.dp else 44.dp
+    val surfaceSize = Modifier.size(36.dp, 28.dp)
+    val iconSize = 18.dp
 
     Box(
         modifier = Modifier.size(boxSize),
@@ -198,7 +201,7 @@ private fun SectionActionButton(
                 Icon(
                     imageVector = icon,
                     contentDescription = contentDescription,
-                    tint = MaterialTheme.colorScheme.onPrimary,
+                    tint = MaterialTheme.colorScheme.primary,
                     modifier = Modifier.size(iconSize),
                 )
             }
@@ -207,7 +210,7 @@ private fun SectionActionButton(
             Surface(
                 modifier = surfaceSize,
                 shape = RoundedCornerShape(100.dp),
-                color = MaterialTheme.colorScheme.primary,
+                color = MaterialTheme.colorScheme.primary.copy(alpha = 0.14f),
                 onClick = onClick,
                 content = content,
             )
@@ -215,7 +218,7 @@ private fun SectionActionButton(
             Surface(
                 modifier = surfaceSize,
                 shape = RoundedCornerShape(100.dp),
-                color = MaterialTheme.colorScheme.primary,
+                color = MaterialTheme.colorScheme.primary.copy(alpha = 0.14f),
                 content = content,
             )
         }

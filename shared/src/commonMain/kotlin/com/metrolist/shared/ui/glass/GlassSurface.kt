@@ -42,11 +42,14 @@ import dev.chrisbanes.haze.hazeSource
  * Lists set [scrolling] from their scroll state.
  */
 object GlassBlurPolicy {
-    var scrolling by mutableStateOf(false)
-        private set
+    private var scrollingState by mutableStateOf(false)
 
-    fun setScrolling(value: Boolean) {
-        scrolling = value
+    /** Read by glass surfaces; true while a list is scrolling. */
+    val scrolling: Boolean get() = scrollingState
+
+    // Named differently from the property setter so the JVM signatures do not clash.
+    fun updateScrolling(value: Boolean) {
+        if (scrollingState != value) scrollingState = value
     }
 }
 

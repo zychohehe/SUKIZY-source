@@ -392,8 +392,8 @@ fun LibraryContent(
         val currentGridView = isGridView
         val retainedScrollState = scrollState
         val gridScrolling = scrollState.isScrollInProgress
-        LaunchedEffect(gridScrolling) { GlassBlurPolicy.setScrolling(gridScrolling) }
-        DisposableEffect(Unit) { onDispose { GlassBlurPolicy.setScrolling(false) } }
+        LaunchedEffect(gridScrolling) { GlassBlurPolicy.updateScrolling(gridScrolling) }
+        DisposableEffect(Unit) { onDispose { GlassBlurPolicy.updateScrolling(false) } }
         Crossfade(
             targetState = isGridView,
             animationSpec = MaterialTheme.motionScheme.fastEffectsSpec(),
