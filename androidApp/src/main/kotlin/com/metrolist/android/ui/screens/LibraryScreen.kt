@@ -137,6 +137,7 @@ import com.metrolist.shared.ui.components.FabMenuPopup
 import com.metrolist.shared.ui.components.LibraryItemContainer
 import com.metrolist.shared.ui.components.PopupVisibility
 import com.metrolist.shared.ui.components.RefreshIndicator
+import com.metrolist.shared.ui.components.SpotifyImportCard
 import com.metrolist.shared.ui.components.ScrollingAddButton
 import com.metrolist.shared.ui.components.rememberScrollingFabState
 import com.metrolist.shared.ui.icons.MetrolistIcons
@@ -174,6 +175,7 @@ fun LibraryScreen(
     onNavigateToPodcast: (String) -> Unit = {},
     onNavigateToAutoPlaylist: ((String) -> Unit)? = null,
     onNavigateToPlaylistImport: () -> Unit = {},
+    onNavigateToSpotifyImport: () -> Unit = {},
     floatingActionsBottomInset: State<Dp>,
     scrollToTopEvents: Flow<Long> = emptyFlow(),
     viewModel: LibraryViewModel = koinViewModel(),
@@ -478,6 +480,12 @@ fun LibraryScreen(
                 autoPlaylists = autoPlaylists,
                 hiddenItemKeys = hiddenItemKeys,
                 isLoading = uiState.isLoading,
+                headerExtra =
+                    if (selectedFilter == null || selectedFilter == LibraryFilter.PLAYLISTS) {
+                        { SpotifyImportCard(onClick = onNavigateToSpotifyImport) }
+                    } else {
+                        null
+                    },
                 error = uiState.error,
                 onRetry = { viewModel.refresh() },
                 isGridView = isGridView,

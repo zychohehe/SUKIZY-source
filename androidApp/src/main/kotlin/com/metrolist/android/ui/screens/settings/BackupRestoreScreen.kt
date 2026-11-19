@@ -49,6 +49,7 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -276,7 +277,10 @@ private suspend fun resolveImportError(throwable: Throwable?): String {
 
 @Composable
 @Suppress("FunctionName")
-fun BackupRestoreScreen(onNavigateBack: () -> Unit) {
+fun BackupRestoreScreen(
+    onNavigateBack: () -> Unit,
+    openSpotifyOnStart: Boolean = false,
+) {
     val importedPlaylistText = stringResource(Res.string.imported_playlist)
     val playlistText = stringResource(Res.string.playlist)
     val unknownText = stringResource(Res.string.unknown)
@@ -345,6 +349,14 @@ fun BackupRestoreScreen(onNavigateBack: () -> Unit) {
 
     var showSpotifyProviderDialog by remember { mutableStateOf(false) }
     var spotifyInputUrl by remember { mutableStateOf("") }
+    // Entering from the Library card skips the settings list and opens Spotify directly, once.
+    var spotifyAutoOpened by rememberSaveable { mutableStateOf(false) }
+    LaunchedEffect(openSpotifyOnStart) {
+        if (openSpotifyOnStart && !spotifyAutoOpened) {
+            spotifyAutoOpened = true
+            showSpotifyProviderDialog = true
+        }
+    }
     var showSpotifyLogin by remember { mutableStateOf(false) }
     var isSpotifyAuthenticating by remember { mutableStateOf(false) }
     var spotifyAuthenticationError by remember { mutableStateOf<String?>(null) }

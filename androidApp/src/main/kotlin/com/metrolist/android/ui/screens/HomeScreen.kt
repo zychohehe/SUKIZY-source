@@ -15,15 +15,20 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutVertically
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.focusGroup
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.statusBars
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
@@ -58,6 +63,9 @@ import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.focus.focusRestorer
 import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.input.nestedscroll.NestedScrollConnection
 import androidx.compose.ui.input.nestedscroll.NestedScrollSource
 import androidx.compose.ui.input.nestedscroll.nestedScroll
@@ -356,6 +364,33 @@ fun HomeScreen(
     Box(
         modifier = Modifier.fillMaxSize().nestedScroll(fabNestedScrollConnection),
     ) {
+        if (!isTv) {
+            // Soft colour banner behind the status bar; fades out as the feed scrolls up.
+            val bannerHeight = WindowInsets.statusBars.asPaddingValues().calculateTopPadding() + 200.dp
+            val accent = MaterialTheme.colorScheme.primary
+            Box(
+                modifier =
+                    Modifier
+                        .fillMaxWidth()
+                        .height(bannerHeight)
+                        .graphicsLayer {
+                            alpha =
+                                if (listState.firstVisibleItemIndex > 0) {
+                                    0f
+                                } else {
+                                    (1f - listState.firstVisibleItemScrollOffset / bannerHeight.toPx()).coerceIn(0f, 1f)
+                                }
+                        }.background(
+                            Brush.verticalGradient(
+                                listOf(
+                                    accent.copy(alpha = 0.34f),
+                                    accent.copy(alpha = 0.12f),
+                                    Color.Transparent,
+                                ),
+                            ),
+                        ),
+            )
+        }
         if (enablePullToRefresh) {
             val pullToRefreshState = rememberPullToRefreshState()
             PullToRefreshBox(

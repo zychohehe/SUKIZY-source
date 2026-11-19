@@ -1146,7 +1146,7 @@ fun MetrolistApp(
                     val hostView = LocalView.current
                     val keepScreenOn =
                         (isPlayerExpanded && Settings.shared.keepScreenOnMode.keepsAwake(isPlaying, lyricsVisible)) ||
-                            (currentRoute in setOf(Screen.PlaylistImport, Screen.BackupRestore) && activeImport?.isRunning == true)
+                            (currentRoute in setOf(Screen.PlaylistImport, Screen.SpotifyImport, Screen.BackupRestore) && activeImport?.isRunning == true)
                     DisposableEffect(hostView, keepScreenOn) {
                         hostView.keepScreenOn = keepScreenOn
                         onDispose { hostView.keepScreenOn = false }
@@ -2540,6 +2540,7 @@ fun getEntryProvider(
                 onNavigateToPlaylist = { id, thumbnail -> navigator.navigate(Screen.Playlist(id, thumbnailHint = thumbnail)) },
                 onNavigateToPodcast = { podcastId -> navigator.navigate(Screen.Podcast(podcastId)) },
                 onNavigateToPlaylistImport = { navigator.navigate(Screen.PlaylistImport) },
+                onNavigateToSpotifyImport = { navigator.navigate(Screen.SpotifyImport) },
                 onNavigateToAutoPlaylist = { type ->
                     // Keep podcast auto playlists on the Library stack so Back returns to the podcast library.
                     navigator.navigate(Screen.Library)
@@ -2782,6 +2783,10 @@ fun getEntryProvider(
 
         entry<Screen.PlaylistImport>(metadata = navTabMetadata) {
             PlaylistImportScreen(onNavigateBack = { navigator.goBack() })
+        }
+
+        entry<Screen.SpotifyImport>(metadata = navTabMetadata) {
+            PlaylistImportScreen(onNavigateBack = { navigator.goBack() }, openSpotifyOnStart = true)
         }
 
         entry<Screen.AndroidAuto>(metadata = navTabMetadata) {

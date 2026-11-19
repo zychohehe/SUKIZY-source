@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Imported from the official Metrolist Android translations. --><!-- Source revision: 6ee482cbe3a076092436a3cb1b53571ffead3097 --><!-- See docs/translation-attribution.md for credits and licensing. --><resources xmlns:tools="http://schemas.android.com/tools">
+<!-- Imported from the official SUKIZY Android translations. --><!-- Source revision: 6ee482cbe3a076092436a3cb1b53571ffead3097 --><!-- See docs/translation-attribution.md for credits and licensing. --><resources xmlns:tools="http://schemas.android.com/tools">
     <string name="home">Trang chủ</string>
     <string name="songs">Bài hát</string>
     <string name="artists">Nghệ sĩ</string>
@@ -171,7 +171,7 @@
     <string name="import_error_unsupported_playlist_entries">Danh sách phát này chứa tệp cục bộ hoặc liên kết trực tiếp mà Android không thể truy cập. Hãy nhập danh sách phát có liên kết YouTube hoặc chọn tệp cục bộ trên máy tính.</string>
     <string name="import_error_local_files_require_local_playlist">Chỉ có thể nhập tệp âm thanh cục bộ vào danh sách phát cục bộ.</string>
     <string name="import_error_file_read_failed">Không thể đọc tệp danh sách phát. Hãy chọn lại và cấp quyền truy cập tệp.</string>
-    <string name="startup_error_title">Lỗi khởi động Metrolist</string>
+    <string name="startup_error_title">Lỗi khởi động SUKIZY</string>
     <string name="lyrics_show_translations">Hiển thị bản dịch</string>
     <string name="artist_latest_release">Bản phát hành mới nhất</string>
     <string name="top_tracks">Bản nhạc hàng đầu</string>
@@ -221,7 +221,7 @@
     <string name="available_devices">Thiết bị khả dụng</string>
     <string name="no_device_connected">Chưa kết nối thiết bị nào</string>
     <string name="no_device_found">Không tìm thấy thiết bị</string>
-    <string name="no_compatible_devices">Không tìm thấy thiết bị tương thích với Google Cast, FCast, DLNA hoặc Metrolist.</string>
+    <string name="no_compatible_devices">Không tìm thấy thiết bị tương thích với Google Cast, FCast, DLNA hoặc SUKIZY.</string>
     <string name="show_player_cast_button">Hiển thị nút truyền</string>
     <string name="show_player_video_button">Hiển thị bộ chọn âm thanh/video</string>
     <string name="onboarding_language_lyrics_description">Chọn ngôn ngữ ứng dụng và cách hiển thị lời bài hát.</string>
@@ -292,7 +292,7 @@
     <string name="onboarding_continue_without_migration">Tiếp tục với thư viện trống</string>
     <string name="onboarding_migration_recovery_description">Bạn có thể thử lại hoặc tiếp tục với thư viện trống. Một bản sao phục hồi của cơ sở dữ liệu gốc sẽ được giữ lại trên thiết bị này. Bạn có thể khôi phục bản sao lưu sau khi thiết lập.</string>
     <string name="onboarding_migration_failed">Không thể chuẩn bị thư viện. Dữ liệu gốc của bạn đã được giữ nguyên.</string>
-    <string name="onboarding_library_migrated_description">Danh sách phát, lịch sử, lượt thích và dữ liệu thư viện của bạn đã sẵn sàng trong phiên bản Metrolist này.</string>
+    <string name="onboarding_library_migrated_description">Danh sách phát, lịch sử, lượt thích và dữ liệu thư viện của bạn đã sẵn sàng trong phiên bản SUKIZY này.</string>
     <string name="onboarding_notifications_denied">Thông báo đang tắt. Bạn có thể bật lại sau trong phần cài đặt ứng dụng của Android hoặc chọn Không để tiếp tục.</string>
     <string name="mini_player_video_prerequisite">Trước tiên, hãy bật Phát video nhạc trong phần cài đặt phát nhạc</string>
     <string name="download_folder_access_failed">Không thể lưu quyền truy cập thư mục này. Hãy chọn thư mục có quyền đọc và ghi.</string>
@@ -317,9 +317,9 @@
     <string name="updates_notification_settings">Cài đặt thông báo của Android</string>
     <string name="widget_recognizer_open_result">Mở bài hát đã nhận diện</string>
     <string name="statistics_load_failed">Không thể làm mới thống kê. Hãy thử lại.</string>
-    <string name="desktop_platform_unsupported">Metrolist không hỗ trợ hệ điều hành này. Hãy dùng Windows 10 trở lên, macOS hoặc bản phân phối Linux khác Omarchy.</string>
+    <string name="desktop_platform_unsupported">SUKIZY không hỗ trợ hệ điều hành này. Hãy dùng Windows 10 trở lên, macOS hoặc bản phân phối Linux khác Omarchy.</string>
     <string name="shortcut_toggle_expanded">Mở rộng hoặc thu gọn trình phát</string>
-    <string name="desktop_display_unavailable">Metrolist không thể kết nối với màn hình X của phiên này. Hãy khởi chạy từ phiên làm việc trên màn hình nền với biến DISPLAY đã được đặt.</string>
+    <string name="desktop_display_unavailable">SUKIZY không thể kết nối với màn hình X của phiên này. Hãy khởi chạy từ phiên làm việc trên màn hình nền với biến DISPLAY đã được đặt.</string>
     <string name="webkit_install_hint">Tính năng đăng nhập tích hợp yêu cầu WebKitGTK 4.1 (%1$s). Hãy cài đặt bằng trình quản lý gói của hệ thống.</string>
     <string name="webkit_install_command">Cài đặt bằng lệnh:\n%1$s</string>
     <string name="webkit_appimage_hint">Các bản AppImage cũng sử dụng thư viện WebKitGTK của hệ thống để đăng nhập.</string>
@@ -332,7 +332,7 @@
     <string name="video_stats_latency_value">%1$s ms</string>
     <string name="video_stats_media_stream_value">%1$s / %2$s MB (%3$s%)</string>
     <string name="video_stats_position_volume_value">%1$s | Âm lượng: %2$s</string>
-    <string name="download_folder_unavailable">Không thể dùng thư mục này. Hãy chọn thư mục có quyền ghi mà hệ thống hoặc môi trường cách ly cho phép Metrolist truy cập.</string>
+    <string name="download_folder_unavailable">Không thể dùng thư mục này. Hãy chọn thư mục có quyền ghi mà hệ thống hoặc môi trường cách ly cho phép SUKIZY truy cập.</string>
     <string name="window_maximize">Phóng to</string>
     <string name="window_restore">Khôi phục cửa sổ</string>
     <string name="equalizer_stream_unavailable">Bộ chỉnh âm và bộ tiền khuếch đại không khả dụng cho luồng này. Các thay đổi sẽ được áp dụng khi phát bài hát được hỗ trợ.</string>
@@ -345,7 +345,7 @@
     <string name="queue_youtube_history_paused_desc">Tiếp tục ghi lịch sử nghe để đưa các lượt phát ngoại tuyến vào hàng đợi đồng bộ</string>
     <string name="search_online_failed">Không thể tìm kiếm trực tuyến. Hãy kiểm tra kết nối rồi thử lại.</string>
     <string name="search_load_more_failed">Không thể tải thêm kết quả.</string>
-    <string name="discord_error_gateway_configuration">Discord đã từ chối cấu hình kết nối. Hãy cập nhật Metrolist trước khi thử lại.</string>
+    <string name="discord_error_gateway_configuration">Discord đã từ chối cấu hình kết nối. Hãy cập nhật SUKIZY trước khi thử lại.</string>
     <string name="discord_preview_buttons_adjusted">Discord rút ngắn nhãn nút dài và bỏ qua các nút có liên kết quá dài. Bản xem trước này hiển thị các nút sẽ được gửi.</string>
     <string name="discord_presence_status_warning">Trạng thái hoạt động chi tiết gửi trạng thái Trực tuyến tới Discord. Nó có thể ghi đè trạng thái Ẩn hoặc Không làm phiền, kể cả khi dừng phát nhạc.</string>
     <string name="discord_refresh_queued">Đã đưa yêu cầu làm mới trạng thái vào hàng đợi.</string>
@@ -380,8 +380,8 @@
     <string name="theme_color_rose">Hồng</string>
     <string name="theme_color_red">Đỏ</string>
     <string name="theme_color_gold">Vàng kim</string>
-    <string name="backup_unsupported_format">Phiên bản Metrolist này không hỗ trợ định dạng bản sao lưu này.</string>
-    <string name="backup_unsupported_database">Phiên bản Metrolist này không hỗ trợ phiên bản cơ sở dữ liệu trong bản sao lưu này.</string>
+    <string name="backup_unsupported_format">Phiên bản SUKIZY này không hỗ trợ định dạng bản sao lưu này.</string>
+    <string name="backup_unsupported_database">Phiên bản SUKIZY này không hỗ trợ phiên bản cơ sở dữ liệu trong bản sao lưu này.</string>
     <string name="backup_too_large">Bản sao lưu vượt quá giới hạn kích thước hoặc số mục được hỗ trợ.</string>
     <string name="backup_invalid_data">Không thể đọc hoặc xác thực bản sao lưu. Bản sao lưu có thể bị hỏng hoặc chứa dữ liệu không được hỗ trợ.</string>
     <string name="search_history_removal_failed">Không thể xóa lịch sử tìm kiếm của tài khoản. Vui lòng thử lại khi có kết nối.</string>
@@ -392,10 +392,10 @@
     <string name="top_period_past_year">Năm qua</string>
     <string name="onboarding_welcome_description">Thiết lập quyền riêng tư và quyền hệ thống trước lần nghe đầu tiên.</string>
     <string name="onboarding_migration_title">Thư viện v13 của bạn ở đây</string>
-    <string name="onboarding_migration_description">Chúng tôi đã tìm thấy một cơ sở dữ liệu Metrolist độc lập. Di chuyển danh sách phát, lịch sử, lượt thích và dữ liệu thư viện ngay tại chỗ. Bạn có thể khôi phục cơ sở dữ liệu gốc nếu quá trình di chuyển thất bại.</string>
+    <string name="onboarding_migration_description">Chúng tôi đã tìm thấy một cơ sở dữ liệu SUKIZY độc lập. Di chuyển danh sách phát, lịch sử, lượt thích và dữ liệu thư viện ngay tại chỗ. Bạn có thể khôi phục cơ sở dữ liệu gốc nếu quá trình di chuyển thất bại.</string>
     <string name="onboarding_migration_complete_title">Tài khoản của bạn đã được di chuyển</string>
-    <string name="onboarding_migration_complete_description">Tài khoản, danh sách phát, lịch sử, lượt thích và dữ liệu thư viện của bạn đã sẵn sàng trong phiên bản Metrolist này.</string>
-    <string name="onboarding_crash_reports_title">Giúp cải thiện Metrolist</string>
+    <string name="onboarding_migration_complete_description">Tài khoản, danh sách phát, lịch sử, lượt thích và dữ liệu thư viện của bạn đã sẵn sàng trong phiên bản SUKIZY này.</string>
+    <string name="onboarding_crash_reports_title">Giúp cải thiện SUKIZY</string>
     <string name="onboarding_crash_reports_description">Tùy chọn chia sẻ dữ liệu chẩn đoán qua Sentry để giúp chúng tôi tìm và khắc phục sự cố. Bạn có thể thay đổi tùy chọn này bất cứ lúc nào trong Cài đặt.</string>
     <string name="onboarding_notifications_title">Cho phép thông báo</string>
     <string name="onboarding_notifications_description">Bật thông báo về phát nhạc và tải xuống.</string>
@@ -411,10 +411,10 @@
     <string name="onboarding_finish_title">Mọi thứ đã sẵn sàng</string>
     <string name="onboarding_finish_description">Đã hoàn tất thiết lập. Bắt đầu nghe hoặc chuyển tài khoản và dữ liệu của bạn sang trước.</string>
     <string name="onboarding_restore_backup">Khôi phục từ bản sao lưu</string>
-    <string name="onboarding_settings_hint">Mở Cài đặt từ trình đơn ở góc trên bên phải để tùy chỉnh Metrolist.</string>
+    <string name="onboarding_settings_hint">Mở Cài đặt từ trình đơn ở góc trên bên phải để tùy chỉnh SUKIZY.</string>
     <string name="onboarding_no_saved_accounts">Không tìm thấy tài khoản đã liên kết.</string>
     <string name="onboarding_account_picture">Ảnh hồ sơ của %1$s</string>
-    <string name="onboarding_backup_picker_title">Khôi phục bản sao lưu Metrolist</string>
+    <string name="onboarding_backup_picker_title">Khôi phục bản sao lưu SUKIZY</string>
     <string name="onboarding_backup_picker_error">Không thể mở trình chọn bản sao lưu: %1$s</string>
     <string name="onboarding_backup_restore_failed">Khôi phục thất bại: %1$s</string>
     <string name="new_badge">Mới</string>
@@ -432,7 +432,7 @@
     <string name="settings_appearance_overview">Giao diện, phông chữ và hình thức trình phát</string>
     <string name="settings_android_auto_overview">Danh sách phát trên xe và đích thêm nhanh</string>
     <string name="settings_about_overview">Người đóng góp, liên kết cộng đồng và giấy phép</string>
-    <string name="settings_supported_links_overview">Chọn các liên kết YouTube sẽ mở bằng Metrolist</string>
+    <string name="settings_supported_links_overview">Chọn các liên kết YouTube sẽ mở bằng SUKIZY</string>
     <string name="settings_equalizer_overview">Thiết lập âm thanh có sẵn, dải tần và cấu hình</string>
     <string name="settings_fonts_overview">Chọn và nhập phông chữ</string>
     <string name="settings_artwork_overview">Ảnh bìa động, nguồn hình ảnh và chất lượng video</string>
@@ -448,7 +448,7 @@
     <string name="settings_listen_together_overview">Máy chủ, yêu cầu tham gia và đề xuất bài hát</string>
     <string name="settings_device_connect_overview">Thiết bị ở gần, ghép nối và phát từ xa</string>
     <string name="settings_release_overview">Ghi chú phát hành và tùy chọn cài đặt</string>
-    <string name="settings_notification_access_summary">Chọn các thông báo Android cho phép Metrolist gửi</string>
+    <string name="settings_notification_access_summary">Chọn các thông báo Android cho phép SUKIZY gửi</string>
     <string name="settings_crash_reports_summary">Đọc và chia sẻ báo cáo sự cố đã lưu</string>
     <string name="settings_content_language_summary">Ngôn ngữ dùng để tìm kiếm và đề xuất trên YouTube Music</string>
     <string name="settings_content_country_summary">Khu vực dùng cho bảng xếp hạng và đề xuất trên YouTube Music</string>
@@ -468,7 +468,7 @@
     <string name="settings_canvas_playback_summary">Phát đoạn ngắn hoặc toàn bộ video nhạc phía sau trình phát</string>
     <string name="settings_normalization_summary">Cân bằng âm lượng giữa các bài để tránh chênh lệch lớn</string>
     <string name="settings_loudness_target_summary">Đặt âm lượng mục tiêu khi bật chuẩn hóa âm thanh</string>
-    <string name="settings_stop_on_close_summary">Dừng phát khi vuốt Metrolist khỏi danh sách ứng dụng gần đây</string>
+    <string name="settings_stop_on_close_summary">Dừng phát khi vuốt SUKIZY khỏi danh sách ứng dụng gần đây</string>
     <string name="settings_screen_awake_summary">Chọn liệu trình phát hoặc lời bài hát có giữ màn hình sáng không</string>
     <string name="settings_translation_mode_summary">Dịch từ ngữ hoặc ghi cách phát âm bằng hệ chữ đích</string>
     <string name="settings_translation_provider_summary">Chọn dịch vụ dịch lời bài hát</string>
@@ -487,7 +487,7 @@
     <string name="settings_reset_download_folder_summary">Dùng thư mục mặc định cho bài hát đã tải xuống</string>
     <string name="settings_diagnostic_logs_summary">Đọc và sao chép nhật ký chẩn đoán của ứng dụng</string>
     <string name="settings_log_directory_summary">Duyệt tệp nhật ký đã lưu trong trình quản lý tệp</string>
-    <string name="settings_check_releases_summary">Kiểm tra phiên bản Metrolist mới hơn trên GitHub</string>
+    <string name="settings_check_releases_summary">Kiểm tra phiên bản SUKIZY mới hơn trên GitHub</string>
     <string name="settings_share_apk_summary">Chia sẻ gói ứng dụng đã cài đặt dưới dạng tệp</string>
     <string name="settings_system_font_summary">Dùng phông chữ do hệ điều hành cung cấp</string>
     <string name="settings_thumbnail_shape_summary">Chọn hình dạng ảnh bìa trong trình phát mở rộng</string>
@@ -648,17 +648,17 @@
     <string name="credits_creator_section">Người tạo</string>
     <string name="devmode_already_active" translatable="true">Chế độ nhà phát triển đã được bật</string>
     <string name="discord_enable_rich_presence">Discord Rich Presence</string>
-    <string name="discord_listen_to_metrolist">Nghe Metrolist</string>
+    <string name="discord_listen_to_metrolist">Nghe SUKIZY</string>
     <string name="discord_login_description">Kết nối tài khoản Discord của bạn</string>
     <string name="discord_rich_presence">Rich presence</string>
     <string name="discord_state">Trạng thái</string>
     <string name="discord_button1_text_default">Nghe trên YouTube Music</string>
-    <string name="discord_button2_text_default">Truy cập Metrolist</string>
+    <string name="discord_button2_text_default">Truy cập SUKIZY</string>
     <string name="discord_status_authorizing">Đang ủy quyền…</string>
     <string name="discord_status_not_initialized">Chưa khởi tạo</string>
     <string name="discord_status_authorized">Đã ủy quyền</string>
     <string name="discord_error_denied">Discord đã từ chối ủy quyền.</string>
-    <string name="discord_error_connection_failed">Không thể kết nối với Discord. Metrolist sẽ tự động thử lại.</string>
+    <string name="discord_error_connection_failed">Không thể kết nối với Discord. SUKIZY sẽ tự động thử lại.</string>
     <string name="discord_error_no_browser">Không có ứng dụng nào để mở trang ủy quyền Discord.</string>
     <string name="discord_error_token_exchange_failed">Trao đổi mã thông báo thất bại. Hãy thử lại.</string>
     <string name="discord_error_token_refresh_failed">Làm mới mã thông báo thất bại. Hãy đăng nhập lại.</string>
@@ -696,7 +696,7 @@
     <string name="settings_application_about">Ứng dụng &amp; giới thiệu</string>
     <string name="settings_open_supported_links_title">Mở liên kết được hỗ trợ</string>
     <string name="settings_updates_title">Cập nhật</string>
-    <string name="settings_updates_available_description">Đã có bản cập nhật Metrolist mới</string>
+    <string name="settings_updates_available_description">Đã có bản cập nhật SUKIZY mới</string>
     <string name="settings_about_title">Giới thiệu SUKIZY</string>
     <string name="devtools_render_backend">Nền tảng kết xuất</string>
     <string name="devtools_render_backend_description">Thay đổi có hiệu lực sau khi khởi động lại. Ghi đè API kết xuất của môi trường và JVM được ưu tiên. Skiko có thể chuyển sang phương án khác nếu nền tảng đã chọn không khởi tạo được.</string>
@@ -736,7 +736,7 @@
     <string name="app_icon_zenith_white">Zenith White</string>
     <string name="app_icon_gradient">Chuyển sắc</string>
     <string name="app_font_choose">Chọn tệp phông chữ</string>
-    <string name="app_font_picker_desc">Chọn tệp TTF hoặc OTF. Metrolist sao chép tệp vào bộ nhớ riêng của ứng dụng.</string>
+    <string name="app_font_picker_desc">Chọn tệp TTF hoặc OTF. SUKIZY sao chép tệp vào bộ nhớ riêng của ứng dụng.</string>
     <string name="app_font_applied">Đang dùng %1$s</string>
     <string name="app_font_invalid">Không thể dùng phông chữ này. Hãy chọn tệp TTF hoặc OTF hợp lệ nhỏ hơn 20 MB.</string>
     <string name="app_font_downloads">Tải nhanh phông chữ</string>
@@ -859,7 +859,7 @@
     <string name="voice_search_setting_desc">Dùng nút micro để tìm kiếm bằng giọng nói. Nhấn giữ mục điều hướng Tìm kiếm để nhận diện nhạc đang phát gần đó.</string>
     <string name="spotify_sign_in">Đăng nhập Spotify</string>
     <string name="spotify_sign_in_again">Đăng nhập lại</string>
-    <string name="spotify_choose_playlists_supporting">Chọn các danh sách phát bạn muốn nhập vào Metrolist.</string>
+    <string name="spotify_choose_playlists_supporting">Chọn các danh sách phát bạn muốn nhập vào SUKIZY.</string>
     <plurals name="spotify_selected_playlist_count">
         <item quantity="other">Đã chọn %1$d danh sách phát</item>
     </plurals>
@@ -879,7 +879,7 @@
         <item quantity="other">Đã nhập %1$d bài hát</item>
     </plurals>
     <string name="backup_restore_export_desc">Xuất cài đặt, cơ sở dữ liệu thư viện, danh sách phát, lượt thích và lịch sử ra tệp zip</string>
-    <string name="backup_restore_import_desc">Khôi phục bản sao lưu Metrolist. Ứng dụng sẽ khởi động lại sau khi khôi phục thành công.</string>
+    <string name="backup_restore_import_desc">Khôi phục bản sao lưu SUKIZY. Ứng dụng sẽ khởi động lại sau khi khôi phục thành công.</string>
     <string name="backup_restore_busy">Đang xử lý…</string>
     <string name="foreign_import_title">Nhập từ ứng dụng khác</string>
     <string name="foreign_import_desc">Nhập lượt thích, danh sách phát và lịch sử nghe từ bản sao lưu InnerTune, OuterTune, ViMusic, RiMusic, Kreate, SimpMusic hoặc Prism. Ứng dụng giữ nguyên thư viện hiện tại của bạn.</string>
@@ -910,7 +910,7 @@
     <string name="listenbrainz_connect_title">Kết nối ListenBrainz</string>
     <string name="listenbrainz_user_token">Mã thông báo người dùng</string>
     <string name="scrobble_create_account">Tạo tài khoản</string>
-    <string name="restore_database_incompatible">Bản sao lưu này dùng cơ sở dữ liệu phiên bản %1$d, nhưng ứng dụng này hỗ trợ tối đa phiên bản %2$d. Hãy cập nhật Metrolist rồi thử lại.</string>
+    <string name="restore_database_incompatible">Bản sao lưu này dùng cơ sở dữ liệu phiên bản %1$d, nhưng ứng dụng này hỗ trợ tối đa phiên bản %2$d. Hãy cập nhật SUKIZY rồi thử lại.</string>
     <string name="restore_failed_detail">Không thể khôi phục bản sao lưu ở bước: %1$s.\n\nLý do: %2$s</string>
     <string name="restore_error_unknown">Không có thông tin chi tiết bổ sung.</string>
     <string name="restore_stage_reading_backup">Đọc tệp sao lưu</string>
@@ -1000,9 +1000,9 @@
     <string name="updates_title">Cập nhật ứng dụng</string>
     <string name="updates_check">Kiểm tra bản cập nhật</string>
     <string name="updates_checking">Đang kiểm tra bản cập nhật…</string>
-    <string name="updates_no_updates">Metrolist đã được cập nhật</string>
+    <string name="updates_no_updates">SUKIZY đã được cập nhật</string>
     <string name="updates_error">Không thể kiểm tra bản cập nhật</string>
-    <string name="updates_status_current">Đã cập nhật lên Metrolist %1$s</string>
+    <string name="updates_status_current">Đã cập nhật lên SUKIZY %1$s</string>
     <string name="updates_auto_check">Tự động kiểm tra bản cập nhật</string>
     <string name="updates_notifications">Thông báo cập nhật</string>
     <string name="updates_share_app">Chia sẻ ứng dụng</string>
@@ -1013,27 +1013,27 @@
     <string name="updates_pending_title">Bản cập nhật đang chờ</string>
     <string name="updates_installing_title">Đang cài đặt bản cập nhật</string>
     <string name="updates_installing_description">Đang tải xuống và cài đặt bản cập nhật</string>
-    <string name="updates_version">Phiên bản Metrolist</string>
+    <string name="updates_version">Phiên bản SUKIZY</string>
     <string name="updates_size">Dung lượng bản cập nhật</string>
     <string name="updates_date">Ngày</string>
     <string name="updates_changelog">Nhật ký thay đổi</string>
     <string name="updates_install">Cài đặt</string>
     <string name="updates_retry">Thử lại</string>
-    <string name="updates_available_title">Metrolist %1$s đã có sẵn</string>
+    <string name="updates_available_title">SUKIZY %1$s đã có sẵn</string>
     <string name="updates_available_message">Chạm Cập nhật để tải bản cập nhật và tiếp tục đến trình cài đặt của Android.</string>
     <string name="updates_changelog_preview">Có gì mới</string>
     <string name="updates_pending_parenthetical">(đang chờ cập nhật)</string>
     <string name="update_pending">Đang chờ cập nhật</string>
     <string name="updates_action">Cập nhật</string>
-    <string name="updates_notification_title">Metrolist %1$s đã sẵn sàng</string>
+    <string name="updates_notification_title">SUKIZY %1$s đã sẵn sàng</string>
     <string name="updates_notification_text">Chạm để tải xuống và cài đặt bản cập nhật</string>
     <string name="updates_channel_name">Cập nhật ứng dụng</string>
-    <string name="updates_channel_description">Thông báo về các phiên bản Metrolist mới</string>
+    <string name="updates_channel_description">Thông báo về các phiên bản SUKIZY mới</string>
     <string name="updates_download_failed">Không thể tải xuống bản cập nhật.</string>
     <string name="updates_digest_failed">Bản cập nhật đã tải không khớp với giá trị kiểm tra của GitHub.</string>
     <string name="updates_installer_failed">Trình cài đặt gói của Android không khả dụng hoặc việc cài đặt ứng dụng bị hạn chế trên thiết bị này.</string>
     <string name="updates_release_unavailable">Bản phát hành này không có APK tương thích.</string>
-    <string name="updates_release_notes_title">Có gì mới trong Metrolist %1$s</string>
+    <string name="updates_release_notes_title">Có gì mới trong SUKIZY %1$s</string>
     <string name="device_connect_title">Kết nối thiết bị</string>
     <string name="device_connect_summary">Ghép nối các thiết bị tin cậy trên mạng cục bộ. Kết nối được mã hóa.</string>
     <string name="device_connect_beta">Beta</string>
@@ -1069,7 +1069,7 @@
     <string name="device_connect_device_type_and_model">%1$s · %2$s</string>
     <string name="device_connect_picker_title">Kết nối với thiết bị</string>
     <string name="device_connect_available">Khả dụng</string>
-    <string name="side_menu_welcome">Chào mừng đến với Metrolist</string>
+    <string name="side_menu_welcome">Chào mừng đến với SUKIZY</string>
     <string name="action_cannot_be_undone">Không thể hoàn tác thao tác này.</string>
     <string name="add">Thêm</string>
     <string name="add_a_song">Thêm bài hát</string>
@@ -1582,7 +1582,7 @@
     <string name="play_pause">Phát/tạm dừng</string>
     <string name="next">Tiếp</string>
     <string name="not_playing">Không có bài hát đang phát</string>
-    <string name="tap_to_play">Chạm để mở Metrolist</string>
+    <string name="tap_to_play">Chạm để mở SUKIZY</string>
     <string name="widget_description">Tiện ích trình phát nhạc với điều khiển phát</string>
     <string name="turntable_widget_description">Tiện ích ảnh bìa tròn với điều khiển phát</string>
     <string name="widget_turntable">Mâm đĩa than</string>
@@ -1672,8 +1672,8 @@
     <string name="account_user_icon">Người dùng</string>
     <string name="account_logout_confirm">Đăng xuất?</string>
     <string name="account_sign_in">Đăng nhập</string>
-    <string name="account_keyring_required">Metrolist cần quyền truy cập vào chuỗi khóa của hệ thống để khôi phục tài khoản của bạn. Hãy mở khóa chuỗi khóa. Metrolist sẽ tự động thử lại.</string>
-    <string name="account_linux_keyring_required">Metrolist cần chuỗi khóa của hệ thống để khôi phục tài khoản của bạn. Hãy cài libsecret-tools hoặc gói của bản phân phối cung cấp secret-tool, và đảm bảo chuỗi khóa đang chạy và đã được mở khóa. Metrolist sẽ tự động thử lại.</string>
+    <string name="account_keyring_required">SUKIZY cần quyền truy cập vào chuỗi khóa của hệ thống để khôi phục tài khoản của bạn. Hãy mở khóa chuỗi khóa. SUKIZY sẽ tự động thử lại.</string>
+    <string name="account_linux_keyring_required">SUKIZY cần chuỗi khóa của hệ thống để khôi phục tài khoản của bạn. Hãy cài libsecret-tools hoặc gói của bản phân phối cung cấp secret-tool, và đảm bảo chuỗi khóa đang chạy và đã được mở khóa. SUKIZY sẽ tự động thử lại.</string>
     <string name="account_logout_webview_failed">Đã đăng xuất, nhưng không thể xóa hồ sơ đăng nhập WebView.</string>
     <string name="account_webview_remove_failed">Không thể xóa hồ sơ đăng nhập WebView.</string>
     <string name="account_retry_cleanup">Thử dọn dẹp lại</string>
@@ -1801,7 +1801,7 @@
     <string name="menu_keyboard_shortcuts">Phím tắt</string>
     <string name="menu_application_logs">Nhật ký ứng dụng</string>
     <string name="menu_report_issue">Báo cáo sự cố…</string>
-    <string name="menu_about_metrolist">Giới thiệu Metrolist</string>
+    <string name="menu_about_metrolist">Giới thiệu SUKIZY</string>
     <string name="menu_song">Bài hát</string>
     <string name="menu_stop">Dừng</string>
     <string name="menu_go_to_current_song">Đến bài hát hiện tại</string>
@@ -1861,7 +1861,7 @@
     <string name="create_backup">Tạo bản sao lưu</string>
     <string name="create_backup_desc">Xuất tất cả cài đặt, tài khoản, thông tin xác thực và dữ liệu thư viện</string>
     <string name="restore_backup">Khôi phục bản sao lưu</string>
-    <string name="restore_backup_desc">Nhập bản sao lưu Metrolist trên Android hoặc máy tính và khởi động lại</string>
+    <string name="restore_backup_desc">Nhập bản sao lưu SUKIZY trên Android hoặc máy tính và khởi động lại</string>
     <string name="sensitive_backup">Bản sao lưu nhạy cảm</string>
     <string name="restore_backup_confirm">Khôi phục bản sao lưu?</string>
     <string name="restore">Khôi phục</string>
@@ -1972,12 +1972,12 @@
         <item quantity="other">%1$d bài hát</item>
     </plurals>
     <string name="app_data">Dữ liệu ứng dụng</string>
-    <string name="backup_picker_title">Khôi phục bản sao lưu Metrolist</string>
-    <string name="create_backup_dialog_title">Tạo bản sao lưu Metrolist</string>
+    <string name="backup_picker_title">Khôi phục bản sao lưu SUKIZY</string>
+    <string name="create_backup_dialog_title">Tạo bản sao lưu SUKIZY</string>
     <string name="backup_created">Đã tạo bản sao lưu</string>
     <string name="backup_failed">Sao lưu thất bại: %1$s</string>
     <string name="could_not_open_file_picker">Không thể mở bộ chọn tệp: %1$s</string>
-    <string name="restore_replaces_data">Thao tác này thay thế cài đặt, thông tin xác thực, tài khoản và dữ liệu thư viện hiện tại của bạn. Metrolist sẽ tự động khởi động lại.</string>
+    <string name="restore_replaces_data">Thao tác này thay thế cài đặt, thông tin xác thực, tài khoản và dữ liệu thư viện hiện tại của bạn. SUKIZY sẽ tự động khởi động lại.</string>
     <string name="create_backup_countdown">Tạo bản sao lưu (%1$d)</string>
     <string name="listen_together_how_it_works">Cách hoạt động</string>
     <string name="listen_together_how_it_works_body">Nghe nhạc đồng bộ với bạn bè. Chủ phòng điều khiển phát nhạc và khách tự động theo dõi.</string>
@@ -2045,15 +2045,15 @@
     <string name="tray_hide_window">Ẩn cửa sổ</string>
     <string name="tray_show_window">Hiện cửa sổ</string>
     <string name="desktop_minimize_to_tray">Thu nhỏ xuống khay</string>
-    <string name="desktop_minimize_to_tray_desc">Đóng cửa sổ sẽ thu nhỏ Metrolist xuống khay thay vì thoát</string>
+    <string name="desktop_minimize_to_tray_desc">Đóng cửa sổ sẽ thu nhỏ SUKIZY xuống khay thay vì thoát</string>
     <string name="desktop_tray_toggle_on_click">Ẩn hoặc hiện khi nhấp vào khay</string>
-    <string name="desktop_tray_toggle_on_click_desc">Nhấp chuột trái vào biểu tượng khay sẽ mở hoặc đóng cửa sổ Metrolist</string>
-    <string name="desktop_tray_toggle_on_click_desc_mac">Nhấp chuột phải vào biểu tượng khay sẽ mở hoặc đóng cửa sổ Metrolist</string>
+    <string name="desktop_tray_toggle_on_click_desc">Nhấp chuột trái vào biểu tượng khay sẽ mở hoặc đóng cửa sổ SUKIZY</string>
+    <string name="desktop_tray_toggle_on_click_desc_mac">Nhấp chuột phải vào biểu tượng khay sẽ mở hoặc đóng cửa sổ SUKIZY</string>
     <string name="tray_show_miniplayer">Hiện trình phát thu nhỏ</string>
     <string name="tray_settings">Cài đặt</string>
-    <string name="tray_quit_metrolist">Thoát Metrolist</string>
+    <string name="tray_quit_metrolist">Thoát SUKIZY</string>
     <string name="sign_in_discord">Đăng nhập Discord</string>
-    <string name="discord_continue_in_browser">Hãy tiếp tục đăng nhập Discord trong trình duyệt của bạn. Quay lại Metrolist khi hoàn tất.</string>
+    <string name="discord_continue_in_browser">Hãy tiếp tục đăng nhập Discord trong trình duyệt của bạn. Quay lại SUKIZY khi hoàn tất.</string>
     <string name="discord_open_browser_again">Mở lại</string>
     <string name="discord_browser_open_failed">Không thể mở trình duyệt. Hãy thử mở lại.</string>
     <string name="discord_sign_in_unavailable">Đăng nhập Discord không khả dụng</string>
@@ -2268,7 +2268,7 @@
     <string name="no_match_found">Không tìm thấy kết quả</string>
     <string name="recognition_error">Lỗi nhận diện</string>
     <string name="try_again">Thử lại</string>
-    <string name="play_on_app">Phát trong Metrolist</string>
+    <string name="play_on_app">Phát trong SUKIZY</string>
     <string name="re_listen">Nghe lại</string>
     <string name="stands_with_palestine">Dự án này ủng hộ Palestine</string>
     <string name="about_play_favorite_song">Bạn có muốn phát bài hát yêu thích của họ không?</string>
@@ -2294,7 +2294,7 @@
     <string name="playback_event_log_raw_description">Chẩn đoán phát nhạc luôn bật. Hãy sao chép hoặc xuất nhật ký thô này khi việc phát nhạc gặp sự cố.</string>
     <string name="playback_event_log_raw_empty">Chưa ghi nhận sự kiện phát nào. Hãy phát một bài để thu thập chẩn đoán.</string>
     <string name="audio_boost">Bộ tiền khuếch đại</string>
-    <string name="equalizer_usage_warning">Nhóm Metrolist không chịu trách nhiệm về việc bạn sử dụng MetroEQ.</string>
+    <string name="equalizer_usage_warning">Nhóm SUKIZY không chịu trách nhiệm về việc bạn sử dụng MetroEQ.</string>
     <string name="playlist_cover_updated">Đã cập nhật ảnh bìa danh sách phát</string>
     <string name="playlist_cover_removed">Đã xóa ảnh bìa tùy chỉnh</string>
     <string name="login">Đăng nhập</string>
@@ -2369,7 +2369,7 @@
     <string name="metroeq_preset_bass">Tăng âm trầm</string>
     <string name="metroeq_presets">Cấu hình sẵn</string>
     <string name="download_error_incomplete">YouTube không cung cấp đầy đủ tệp âm thanh. Hãy thử lại sau hoặc dùng mạng khác.</string>
-    <string name="desktop_omarchy_unsupported">Metrolist không chạy trên Omarchy. Hãy dùng bản phân phối Linux khác, Windows 10 trở lên hoặc macOS.</string>
+    <string name="desktop_omarchy_unsupported">SUKIZY không chạy trên Omarchy. Hãy dùng bản phân phối Linux khác, Windows 10 trở lên hoặc macOS.</string>
     <string name="learn_more">Tìm hiểu thêm</string>
     <string name="chip_content_description">%1$s, chip</string>
     <string name="global_lyrics_offset">Độ lệch lời bài hát toàn cục</string>
@@ -2493,7 +2493,7 @@
     <string name="ai_setup_description">Tạo tài khoản OpenRouter, đăng nhập và chọn một mô hình miễn phí.</string>
     <string name="ai_setup_step">Bước %1$d/%2$d</string>
     <string name="ai_setup_account">Tạo tài khoản OpenRouter</string>
-    <string name="ai_setup_account_description">OpenRouter kết nối Metrolist với các mô hình AI dịch lời bài hát.</string>
+    <string name="ai_setup_account_description">OpenRouter kết nối SUKIZY với các mô hình AI dịch lời bài hát.</string>
     <string name="ai_setup_limits">Mô hình miễn phí cho phép tối đa %1$d yêu cầu mỗi phút và %2$d mỗi ngày, hoặc %4$d mỗi ngày sau khi mua ít nhất %3$d tín dụng.</string>
     <string name="ai_setup_create_account">Tạo tài khoản</string>
     <string name="ai_setup_view_limits">Xem giới hạn hiện tại</string>

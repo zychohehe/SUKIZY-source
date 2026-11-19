@@ -438,7 +438,6 @@ private fun CollaboratorsList(
     title: String? = text.collaborators,
     avatarSize: Dp = 48.dp,
 ) {
-    if (contributors.isEmpty()) return
     Column(Modifier.fillMaxWidth()) {
         title?.let {
             Text(

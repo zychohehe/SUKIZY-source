@@ -20,7 +20,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.draw.drawWithCache
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.geometry.Offset
@@ -43,14 +42,11 @@ import dev.chrisbanes.haze.hazeSource
  * Lists set [scrolling] from their scroll state.
  */
 object GlassBlurPolicy {
-    private var scrollingState by mutableStateOf(false)
+    var scrolling by mutableStateOf(false)
+        private set
 
-    /** Read by glass surfaces; true while a list is scrolling. */
-    val scrolling: Boolean get() = scrollingState
-
-    // Named differently from the property setter so the JVM signatures do not clash.
-    fun updateScrolling(value: Boolean) {
-        if (scrollingState != value) scrollingState = value
+    fun setScrolling(value: Boolean) {
+        scrolling = value
     }
 }
 
@@ -64,8 +60,6 @@ val LocalGlassBlurSupported = staticCompositionLocalOf { false }
 @Composable
 fun Modifier.glassSource(baseColor: Color): Modifier {
     val state = LocalGlassHazeState.current.takeUnless { GlassBlurPolicy.scrolling }
-    // No live blur: a flat backdrop is all the glass needs, so skip the gradients drawn behind the whole screen.
-    if (state == null) return this.drawBehind { drawRect(baseColor) }
     val scheme = MaterialTheme.colorScheme
     val primary = scheme.primary
     val tertiary = scheme.tertiary
@@ -124,15 +118,6 @@ fun Modifier.glassSurface(
             liveBlur -> if (dark) 0.90f else 0.93f
             else -> if (dark) 0.80f else 0.86f
         }
-    if (!blurred) {
-        // Flat tint, hairline border and a small shadow: far cheaper than gradients and a large blur shadow.
-        val hairline = scheme.onSurface.copy(alpha = 0.08f)
-        val flatShadow = if (shadow < 4.dp) shadow else 4.dp
-        return this
-            .shadow(flatShadow, shape, clip = false, ambientColor = Color.Black.copy(alpha = 0.25f), spotColor = Color.Black.copy(alpha = 0.25f))
-            .background(mixed.copy(alpha = tintAlpha), shape)
-            .border(1.dp, hairline, shape)
-    }
     val topLight =
         Brush.verticalGradient(
             listOf(Color.White.copy(alpha = if (dark) 0.16f else 0.50f), Color.White.copy(alpha = 0.02f)),

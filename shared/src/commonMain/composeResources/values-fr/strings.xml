@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Imported from the official Metrolist Android translations. --><!-- Source revision: 6ee482cbe3a076092436a3cb1b53571ffead3097 --><!-- See docs/translation-attribution.md for credits and licensing. --><resources xmlns:tools="http://schemas.android.com/tools">
+<!-- Imported from the official SUKIZY Android translations. --><!-- Source revision: 6ee482cbe3a076092436a3cb1b53571ffead3097 --><!-- See docs/translation-attribution.md for credits and licensing. --><resources xmlns:tools="http://schemas.android.com/tools">
     <string name="home">Accueil</string>
     <string name="offline_mode">Mode hors ligne</string>
     <string name="songs">Titres</string>
@@ -263,17 +263,17 @@
     <string name="credits_license_desc">SUKIZY est distribué sous licence GPL-3.0</string>
     <string name="devmode_already_active" translatable="true">Mode développeur déjà actif</string>
     <string name="discord_enable_rich_presence">Discord Rich Presence</string>
-    <string name="discord_listen_to_metrolist">Écoute Metrolist</string>
+    <string name="discord_listen_to_metrolist">Écoute SUKIZY</string>
     <string name="discord_login_description">Connectez-vous à Discord</string>
     <string name="discord_rich_presence">Rich Presence</string>
     <string name="discord_state">État</string>
     <string name="discord_button1_text_default">Écouter sur YouTube Music</string>
-    <string name="discord_button2_text_default">Accéder à Metrolist</string>
+    <string name="discord_button2_text_default">Accéder à SUKIZY</string>
     <string name="discord_status_authorizing">Autorisation en cours…</string>
     <string name="discord_status_not_initialized">Non connecté</string>
     <string name="discord_status_authorized">Autorisé</string>
     <string name="discord_error_denied">Autorisation refusée par Discord.</string>
-    <string name="discord_error_connection_failed">Impossible de se connecter à Discord. Metrolist va réessayer automatiquement.</string>
+    <string name="discord_error_connection_failed">Impossible de se connecter à Discord. SUKIZY va réessayer automatiquement.</string>
     <string name="discord_error_no_browser">Aucune application permettant d\u0027ouvrir l\u0027autorisation Discord n\u0027est disponible.</string>
     <string name="discord_error_token_exchange_failed">Échec de l'échange de jeton. Veuillez réessayer.</string>
     <string name="discord_error_token_refresh_failed">Échec du renouvellement du jeton. Veuillez vous reconnecter.</string>
@@ -303,7 +303,7 @@
     <string name="settings_application_about">Application et informations</string>
     <string name="settings_open_supported_links_title">Ouvrir les liens compatibles</string>
     <string name="settings_updates_title">Mises à jour</string>
-    <string name="settings_updates_available_description">Une nouvelle mise à jour de Metrolist est disponible</string>
+    <string name="settings_updates_available_description">Une nouvelle mise à jour de SUKIZY est disponible</string>
     <string name="settings_about_title">À propos de SUKIZY</string>
     <string name="settings_search_placeholder">Rechercher dans les paramètres</string>
     <string name="settings_search_no_results">Aucun paramètre ne correspond à la recherche</string>
@@ -334,7 +334,7 @@
     <string name="app_icon_zenith_black">Blanc astral</string>
     <string name="app_icon_zenith_white">Noir céleste</string>
     <string name="app_font_choose">Choisir un fichier de police</string>
-    <string name="app_font_picker_desc">Sélectionnez un fichier TTF ou OTF. Metrolist le copiera dans l\u0027espace de stockage privé de l\u0027application.</string>
+    <string name="app_font_picker_desc">Sélectionnez un fichier TTF ou OTF. SUKIZY le copiera dans l\u0027espace de stockage privé de l\u0027application.</string>
     <string name="app_font_system">Police par défaut</string>
     <string name="app_font_applied">Police utilisée : %1$s</string>
     <string name="app_font_invalid">Impossible d\u0027utiliser cette police. Veuillez sélectionner un fichier TTF ou OTF valide de moins de 20 Mo.</string>
@@ -478,9 +478,9 @@
     </plurals>
     <string name="my_top_100">Mon top 100</string>
     <string name="spotify_sign_in_again">Se connecter de nouveau</string>
-    <string name="spotify_choose_playlists_supporting">Sélectionnez les playlists que vous souhaitez importer vers Metrolist.</string>
+    <string name="spotify_choose_playlists_supporting">Sélectionnez les playlists que vous souhaitez importer vers SUKIZY.</string>
     <string name="lyrics_provider_unknown_description">Source de paroles additionnelle</string>
-    <string name="startup_error_title">Erreur de démarrage de Metrolist</string>
+    <string name="startup_error_title">Erreur de démarrage de SUKIZY</string>
     <string name="lyrics_show_translations">Traductions</string>
     <string name="artist_latest_release">Dernière sortie</string>
     <string name="top_tracks">Titres populaires</string>
@@ -509,7 +509,7 @@
         <item quantity="other">%1$d titres importés</item>
     </plurals>
     <string name="backup_restore_export_desc">Exporter les paramètres, la base de données de la bibliothèque, les playlists, les favoris et l'historique dans un fichier ZIP</string>
-    <string name="backup_restore_import_desc">Restaurer une sauvegarde Metrolist. L'application redémarrera automatiquement.</string>
+    <string name="backup_restore_import_desc">Restaurer une sauvegarde SUKIZY. L'application redémarrera automatiquement.</string>
     <string name="backup_restore_busy">Restauration en cours…</string>
     <string name="backup_sensitive_title">Données sensibles</string>
     <string name="backup_sensitive_message">Cette sauvegarde contient vos clés API, vos identifiants de connexion, vos cookies d\u0027authentification, vos jetons de session et d\u0027autres informations sensibles. Toute personne qui possède ce fichier peut accéder à vos comptes. Conservez-le en lieu sûr et ne le partagez jamais.</string>
@@ -533,7 +533,7 @@
     <string name="listenbrainz_now_playing_description">Affiche le titre en cours de lecture sur ListenBrainz</string>
     <string name="listenbrainz_connect_title">Se connecter à ListenBrainz</string>
     <string name="listenbrainz_user_token">Jeton de connexion</string>
-    <string name="restore_database_incompatible">Cette sauvegarde utilise la version %1$d de la base de données, mais cette application ne supporte que jusqu\u0027à la version %2$d. Mettez Metrolist à jour et réessayez.</string>
+    <string name="restore_database_incompatible">Cette sauvegarde utilise la version %1$d de la base de données, mais cette application ne supporte que jusqu\u0027à la version %2$d. Mettez SUKIZY à jour et réessayez.</string>
     <string name="restore_error_unknown">Aucun détail disponible.</string>
     <string name="restore_failed_detail">Impossible de restaurer la sauvegarde à l\u0027étape : %1$s.\n\nCause : %2$s</string>
     <string name="restore_stage_reading_backup">Lecture du fichier de sauvegarde</string>
@@ -595,35 +595,35 @@
     <string name="updates_title">Mise à jour de l\u0027application</string>
     <string name="updates_check">Rechercher des mises à jour</string>
     <string name="updates_checking">Recherche de mises à jour…</string>
-    <string name="updates_no_updates">Metrolist est à jour</string>
+    <string name="updates_no_updates">SUKIZY est à jour</string>
     <string name="updates_error">Impossible de vérifier les mises à jour</string>
-    <string name="updates_status_current">Mis à jour vers Metrolist %1$s</string>
+    <string name="updates_status_current">Mis à jour vers SUKIZY %1$s</string>
     <string name="updates_auto_check">Rechercher automatiquement au démarrage</string>
     <string name="updates_notifications">Notifier quand une mise à jour est disponible</string>
     <string name="updates_changelogs">Notes de mise à jour</string>
     <string name="updates_last_check">Dernière vérification réussie</string>
     <string name="updates_pending_title">Mise à jour en attente</string>
-    <string name="updates_version">Version de Metrolist</string>
+    <string name="updates_version">Version de SUKIZY</string>
     <string name="updates_size">Taille de la mise à jour</string>
     <string name="updates_date">Date</string>
     <string name="updates_changelog">Notes de mise à jour</string>
     <string name="updates_install">Installer</string>
     <string name="updates_retry">Réessayer</string>
-    <string name="updates_available_title">La version %1$s de Metrolist est disponible</string>
+    <string name="updates_available_title">La version %1$s de SUKIZY est disponible</string>
     <string name="updates_available_message">Appuyez sur Mettre à jour pour télécharger la mise à jour et poursuivre vers l\u0027installeur Android.</string>
     <string name="updates_changelog_preview">Quoi de neuf</string>
     <string name="updates_pending_parenthetical">(mise à jour en attente)</string>
     <string name="update_pending">Mise à jour en attente</string>
     <string name="updates_action">Mettre à jour</string>
-    <string name="updates_notification_title">La version %1$s de Metrolist est prête</string>
+    <string name="updates_notification_title">La version %1$s de SUKIZY est prête</string>
     <string name="updates_notification_text">Appuyez pour télécharger et installer la mise à jour</string>
     <string name="updates_channel_name">Mise à jour</string>
-    <string name="updates_channel_description">Notifications à propos des nouvelles versions de Metrolist</string>
+    <string name="updates_channel_description">Notifications à propos des nouvelles versions de SUKIZY</string>
     <string name="updates_download_failed">La mise à jour n\u0027a pas pu être téléchargée.</string>
     <string name="updates_digest_failed">L\u0027empreinte numérique de la mise à jour téléchargée ne correspond pas à celle issue de GitHub.</string>
     <string name="updates_installer_failed">L\u0027installeur de paquets d\u0027Android n\u0027est pas disponible ou l\u0027installation d\u0027applications est restreinte sur cet appareil.</string>
     <string name="updates_release_unavailable">Cette version ne contient pas de fichier APK compatible.</string>
-    <string name="updates_release_notes_title">Metrolist %1$s</string>
+    <string name="updates_release_notes_title">SUKIZY %1$s</string>
     <string name="device_connect_title">Appareils connectés</string>
     <string name="device_connect_summary">Appairez les appareils connectés à votre réseau local. La connexion est chiffrée.</string>
     <string name="device_connect_beta">Beta</string>
@@ -658,7 +658,7 @@
     <string name="device_connect_device_type_and_model">%1$s · %2$s</string>
     <string name="device_connect_picker_title">Connecter un appareil</string>
     <string name="device_connect_available">Disponible</string>
-    <string name="side_menu_welcome">Bienvenue sur Metrolist</string>
+    <string name="side_menu_welcome">Bienvenue sur SUKIZY</string>
     <string name="action_cannot_be_undone">Cette action est irréversible.</string>
     <string name="add">Ajouter</string>
     <string name="add_a_song">Ajouter un titre</string>
@@ -799,7 +799,7 @@
     <string name="go_back">Retour</string>
     <string name="gradient">Dégradé</string>
     <string name="grid_view">Grille</string>
-    <string name="search_songs_artists_podcasts">Rechercher sur Metrolist</string>
+    <string name="search_songs_artists_podcasts">Rechercher sur SUKIZY</string>
     <string name="account_login_with_token">Se connecter avec un jeton</string>
     <string name="token_login_title">Jeton de connexion</string>
     <string name="token_adv_login_description">Il s'agit d'une méthode de connexion avancée. En guise d'alternative au portail web, vous pouvez saisir ou mettre à jour directement votre jeton de connexion ici.\nCela permet, par exemple, d'accélérer la connexion sur plusieurs appareils.\nVeuillez noter que tout jeton dont le format est invalide — et que l'application ne parvient donc pas à interpréter — sera rejeté.\n\nNe partagez jamais ce jeton.</string>
@@ -1292,7 +1292,7 @@
     <string name="available_devices">Appareils disponibles</string>
     <string name="no_device_connected">Aucun appareil connecté</string>
     <string name="no_device_found">Aucun appareil trouvé</string>
-    <string name="no_compatible_devices">Aucun appareil compatible avec Google Cast, FCast, DLNA ou Metrolist n’a été trouvé.</string>
+    <string name="no_compatible_devices">Aucun appareil compatible avec Google Cast, FCast, DLNA ou SUKIZY n’a été trouvé.</string>
     <string name="show_player_cast_button">Afficher le bouton de diffusion</string>
     <string name="show_player_video_button">Afficher le sélecteur audio/vidéo</string>
     <string name="onboarding_language_lyrics_description">Choisissez la langue de l’application et la façon d’afficher les paroles.</string>
@@ -1390,11 +1390,11 @@
     <string name="token_login_show_token">Afficher le jeton</string>
     <string name="onboarding_privacy_policy">Lire notre politique de confidentialité</string>
     <string name="onboarding_welcome_description">Réglez les paramètres de confidentialité et les permissions de l\u0027application avant votre première écoute.</string>
-    <string name="onboarding_crash_reports_title">Contribuez à améliorer Metrolist</string>
-    <string name="onboarding_migration_title">Importez votre bibliothèque Metrolist v13</string>
-    <string name="onboarding_migration_description">Nous avons trouvé des données issues de la version précédente de Metrolist. Importez vos playlists, vos titres favoris, votre historique et votre bibliothèque. Les données d'origine restent intactes si l'importation échoue.</string>
+    <string name="onboarding_crash_reports_title">Contribuez à améliorer SUKIZY</string>
+    <string name="onboarding_migration_title">Importez votre bibliothèque SUKIZY v13</string>
+    <string name="onboarding_migration_description">Nous avons trouvé des données issues de la version précédente de SUKIZY. Importez vos playlists, vos titres favoris, votre historique et votre bibliothèque. Les données d'origine restent intactes si l'importation échoue.</string>
     <string name="onboarding_migration_complete_title">Vos données ont été importées</string>
-    <string name="onboarding_migration_complete_description">Votre compte, vos playlists, vos titres favoris, votre historique et votre bibliothèque sont maintenant disponibles dans cette version de Metrolist.</string>
+    <string name="onboarding_migration_complete_description">Votre compte, vos playlists, vos titres favoris, votre historique et votre bibliothèque sont maintenant disponibles dans cette version de SUKIZY.</string>
     <string name="onboarding_crash_reports_description">Partagez des données de diagnostic optionnelles via Sentry pour nous aider à identifier et corriger les problèmes. Vous pouvez changer d'avis à tout moment depuis les paramètres.</string>
     <string name="onboarding_notifications_title">Autoriser les notifications</string>
     <string name="onboarding_notifications_description">Activez les notifications de lecture et de téléchargement.</string>
@@ -1411,7 +1411,7 @@
     <string name="onboarding_restore_backup">Restaurer une sauvegarde</string>
     <string name="onboarding_settings_hint">Après avoir cliqué sur Terminé, ouvrez les paramètres en haut à droite pour les ajuster selon vos préférences.</string>
     <string name="onboarding_no_saved_accounts">Aucun compte lié n\u0027a été trouvé.</string>
-    <string name="onboarding_backup_picker_title">Restaurez une sauvegarde Metrolist</string>
+    <string name="onboarding_backup_picker_title">Restaurez une sauvegarde SUKIZY</string>
     <string name="onboarding_backup_restore_failed">Échec de la restauration : %1$s</string>
     <string name="token_login_error_missing_auth_cookie">Le jeton ne contient pas les cookies SAPISID/APISID. Vérifiez que vous l'avez bien copié en entier.</string>
     <string name="account_picker_title">Sélectionnez une chaîne YouTube</string>
@@ -1433,7 +1433,7 @@
     <string name="play_pause">Lecture/pause</string>
     <string name="next">Suivant</string>
     <string name="not_playing">Aucun titre en cours de lecture</string>
-    <string name="tap_to_play">Appuyez pour ouvrir Metrolist</string>
+    <string name="tap_to_play">Appuyez pour ouvrir SUKIZY</string>
     <string name="widget_description">Lecteur avec commandes multimédias</string>
     <string name="turntable_widget_description">Pochette circulaire avec commandes multimédias</string>
     <string name="widget_turntable">Tourne-disque</string>
@@ -1584,7 +1584,7 @@
     <string name="menu_application_logs">Journaux de l'application</string>
     <string name="app_logs">Journaux de l'application</string>
     <string name="menu_report_issue">Signaler un problème…</string>
-    <string name="menu_about_metrolist">À propos de Metrolist</string>
+    <string name="menu_about_metrolist">À propos de SUKIZY</string>
     <string name="menu_song">Titre</string>
     <string name="song_type">Titre</string>
     <string name="menu_stop">Arrêter</string>
@@ -1628,7 +1628,7 @@
     <string name="create_backup">Sauvegarder</string>
     <string name="create_backup_desc">Exporter les paramètres, la base de données de la bibliothèque, les playlists, les favoris et l'historique dans un fichier ZIP</string>
     <string name="restore_backup">Restaurer</string>
-    <string name="restore_backup_desc">Restaurer une sauvegarde Metrolist (bureau ou Android). L'application redémarrera automatiquement.</string>
+    <string name="restore_backup_desc">Restaurer une sauvegarde SUKIZY (bureau ou Android). L'application redémarrera automatiquement.</string>
     <string name="sensitive_backup">Données sensibles</string>
     <string name="restore_backup_confirm">Restaurer la sauvegarde ?</string>
     <string name="restore">Restaurer</string>
@@ -1707,12 +1707,12 @@
         <item quantity="other">%1$d titres</item>
     </plurals>
     <string name="app_data">Données de l\u0027application</string>
-    <string name="backup_picker_title">Restaurer une sauvegarde de Metrolist</string>
-    <string name="create_backup_dialog_title">Créer une sauvegarde de Metrolist</string>
+    <string name="backup_picker_title">Restaurer une sauvegarde de SUKIZY</string>
+    <string name="create_backup_dialog_title">Créer une sauvegarde de SUKIZY</string>
     <string name="backup_created">Sauvegarde créée</string>
     <string name="backup_failed">Échec de la sauvegarde : %1$s</string>
     <string name="could_not_open_file_picker">Impossible d\u0027ouvrir l\u0027explorateur de fichiers : %1$s</string>
-    <string name="restore_replaces_data">Cela va remplacer vos données actuelles : comptes, identifiants, paramètres et bibliothèque. Metrolist redémarrera automatiquement.</string>
+    <string name="restore_replaces_data">Cela va remplacer vos données actuelles : comptes, identifiants, paramètres et bibliothèque. SUKIZY redémarrera automatiquement.</string>
     <string name="create_backup_countdown">Créer une sauvegarde (%1$d)</string>
     <string name="remove_server">Supprimer le serveur</string>
     <string name="lastfm_logged_in_as">Connecté en tant que %1$s</string>
@@ -1829,7 +1829,7 @@
     <string name="tray_show_window">Afficher la fenêtre</string>
     <string name="tray_show_miniplayer">Mini-lecteur</string>
     <string name="tray_settings">Paramètres</string>
-    <string name="tray_quit_metrolist">Quitter Metrolist</string>
+    <string name="tray_quit_metrolist">Quitter SUKIZY</string>
     <string name="webview_cleanup_failed">Le profil d\u0027authentification WebView n\u0027a pas pu être supprimé.</string>
     <string name="clearing_signin_session">Fermeture de la session de connexion non terminée…</string>
     <string name="signin_cleanup_failed">Échec de la fermeture de la session de connexion.</string>
@@ -1930,7 +1930,7 @@
     <string name="no_match_found">Aucune correspondance</string>
     <string name="recognition_error">Échec de la reconnaissance musicale</string>
     <string name="try_again">Réessayer</string>
-    <string name="play_on_app">Écouter sur Metrolist</string>
+    <string name="play_on_app">Écouter sur SUKIZY</string>
     <string name="re_listen">Recommencer</string>
     <string name="stands_with_palestine">Ce projet soutient la Palestine</string>
     <string name="cd_account_menu">Menu de l\u0027application</string>
@@ -2039,9 +2039,9 @@
     <string name="updates_notification_settings">Paramètres de notification Android</string>
     <string name="widget_recognizer_open_result">Ouvrir le titre identifié</string>
     <string name="statistics_load_failed">Impossible d'actualiser les statistiques. Réessayez.</string>
-    <string name="desktop_platform_unsupported">Ce système d'exploitation n'est pas pris en charge par Metrolist. Utilisez Windows 10 ou une version ultérieure, macOS ou une distribution Linux autre qu'Omarchy.</string>
+    <string name="desktop_platform_unsupported">Ce système d'exploitation n'est pas pris en charge par SUKIZY. Utilisez Windows 10 ou une version ultérieure, macOS ou une distribution Linux autre qu'Omarchy.</string>
     <string name="shortcut_toggle_expanded">Agrandir ou réduire le lecteur</string>
-    <string name="desktop_display_unavailable">Metrolist n'a pas pu se connecter à l'affichage X de cette session. Lancez l'application depuis votre session de bureau avec DISPLAY défini.</string>
+    <string name="desktop_display_unavailable">SUKIZY n'a pas pu se connecter à l'affichage X de cette session. Lancez l'application depuis votre session de bureau avec DISPLAY défini.</string>
     <string name="webkit_install_hint">La connexion intégrée nécessite WebKitGTK 4.1 (%1$s). Installez-le avec le gestionnaire de paquets de votre système.</string>
     <string name="webkit_install_command">Installez-le avec :\n%1$s</string>
     <string name="webkit_appimage_hint">Les versions AppImage utilisent aussi les bibliothèques WebKitGTK du système pour la connexion.</string>
@@ -2054,7 +2054,7 @@
     <string name="video_stats_latency_value">%1$s ms</string>
     <string name="video_stats_media_stream_value">%1$s / %2$s Mo (%3$s%)</string>
     <string name="video_stats_position_volume_value">%1$s | Vol : %2$s</string>
-    <string name="download_folder_unavailable">Impossible d'utiliser ce dossier. Choisissez un dossier accessible en écriture auquel votre système ou votre bac à sable autorise Metrolist à accéder.</string>
+    <string name="download_folder_unavailable">Impossible d'utiliser ce dossier. Choisissez un dossier accessible en écriture auquel votre système ou votre bac à sable autorise SUKIZY à accéder.</string>
     <string name="window_maximize">Agrandir</string>
     <string name="window_restore">Restaurer la fenêtre</string>
     <string name="equalizer_stream_unavailable">L'égaliseur et le préampli ne sont pas disponibles pour ce flux. Les modifications s'appliqueront à la lecture d'un titre pris en charge.</string>
@@ -2069,7 +2069,7 @@
     <string name="queue_youtube_history_paused_desc">Réactivez l'historique d'écoute pour enregistrer les écoutes hors ligne en attente de synchronisation</string>
     <string name="search_online_failed">Impossible de rechercher en ligne. Vérifiez votre connexion et réessayez.</string>
     <string name="search_load_more_failed">Impossible de charger plus de résultats.</string>
-    <string name="discord_error_gateway_configuration">Discord a rejeté la configuration de connexion. Mettez à jour Metrolist avant de réessayer.</string>
+    <string name="discord_error_gateway_configuration">Discord a rejeté la configuration de connexion. Mettez à jour SUKIZY avant de réessayer.</string>
     <string name="discord_preview_buttons_adjusted">Discord raccourcit les libellés de boutons trop longs et omet les boutons dont les liens sont trop longs. Cet aperçu montre les boutons qui seront envoyés.</string>
     <string name="discord_presence_status_warning">Activer Discord Rich Presence envoie votre activité à Discord et peut remplacer les statuts En ligne, Invisible ou Ne pas déranger, même lorsque la lecture est arrêtée.</string>
     <string name="discord_refresh_queued">Actualisation de la présence mise en attente.</string>
@@ -2104,8 +2104,8 @@
     <string name="theme_color_rose">Rose</string>
     <string name="theme_color_red">Rouge</string>
     <string name="theme_color_gold">Doré</string>
-    <string name="backup_unsupported_format">Ce format de sauvegarde n'est pas pris en charge par cette version de Metrolist.</string>
-    <string name="backup_unsupported_database">La version de la base de données de cette sauvegarde n'est pas prise en charge par cette version de Metrolist.</string>
+    <string name="backup_unsupported_format">Ce format de sauvegarde n'est pas pris en charge par cette version de SUKIZY.</string>
+    <string name="backup_unsupported_database">La version de la base de données de cette sauvegarde n'est pas prise en charge par cette version de SUKIZY.</string>
     <string name="backup_too_large">La sauvegarde dépasse la taille ou le nombre d'entrées pris en charge.</string>
     <string name="backup_invalid_data">Impossible de lire ou de valider la sauvegarde. Elle est peut-être endommagée ou contient des données non prises en charge.</string>
     <string name="search_history_removal_failed">Impossible d'effacer l'historique de recherche. Veuillez réessayer une fois connecté.</string>
@@ -2176,7 +2176,7 @@
     <string name="settings_appearance_overview">Thème, polices et apparence du lecteur</string>
     <string name="settings_android_auto_overview">Playlists en voiture et destination des ajouts rapides</string>
     <string name="settings_about_overview">Contributeurs, liens communautaires et licences</string>
-    <string name="settings_supported_links_overview">Choisissez les liens YouTube qui s'ouvrent dans Metrolist</string>
+    <string name="settings_supported_links_overview">Choisissez les liens YouTube qui s'ouvrent dans SUKIZY</string>
     <string name="settings_equalizer_overview">Préréglages audio, bandes de fréquences et profils</string>
     <string name="settings_fonts_overview">Choix et importation de polices</string>
     <string name="settings_artwork_overview">Pochettes animées, sources d'images et qualité vidéo</string>
@@ -2192,7 +2192,7 @@
     <string name="settings_listen_together_overview">Serveur, demandes de connexion et suggestions de titres</string>
     <string name="settings_device_connect_overview">Associer des appareils et contrôler la lecture</string>
     <string name="settings_release_overview">Notes de version et options d'installation</string>
-    <string name="settings_notification_access_summary">Choisissez les notifications qu'Android autorise pour Metrolist</string>
+    <string name="settings_notification_access_summary">Choisissez les notifications qu'Android autorise pour SUKIZY</string>
     <string name="settings_crash_reports_summary">Consultez et partagez les rapports de plantage enregistrés</string>
     <string name="settings_content_language_summary">Langue des recherches et recommandations de YouTube Music</string>
     <string name="settings_content_country_summary">Région des classements et recommandations de YouTube Music</string>
@@ -2212,7 +2212,7 @@
     <string name="settings_canvas_playback_summary">Lisez de courts extraits ou le clip musical complet derrière le lecteur</string>
     <string name="settings_normalization_summary">Équilibre le volume entre chaque titre pour éviter de trop grands écarts</string>
     <string name="settings_loudness_target_summary">Volume cible pour la normalisation audio</string>
-    <string name="settings_stop_on_close_summary">Arrêtez la lecture quand Metrolist est retiré des applications récentes</string>
+    <string name="settings_stop_on_close_summary">Arrêtez la lecture quand SUKIZY est retiré des applications récentes</string>
     <string name="settings_screen_awake_summary">Choisissez si le lecteur ou les paroles gardent l'écran allumé</string>
     <string name="settings_translation_mode_summary">Traduisez les mots ou transcrivez leur prononciation dans l'écriture cible</string>
     <string name="settings_translation_provider_summary">Choisissez le service qui traduit les paroles</string>
@@ -2231,7 +2231,7 @@
     <string name="settings_reset_download_folder_summary">Utilisez le dossier par défaut pour les titres téléchargés</string>
     <string name="settings_diagnostic_logs_summary">Consultez et copiez le journal de diagnostic de l'application</string>
     <string name="settings_log_directory_summary">Parcourez les journaux enregistrés dans votre gestionnaire de fichiers</string>
-    <string name="settings_check_releases_summary">Recherchez une version plus récente de Metrolist sur GitHub</string>
+    <string name="settings_check_releases_summary">Recherchez une version plus récente de SUKIZY sur GitHub</string>
     <string name="settings_share_apk_summary">Partagez le paquet de l'application installée sous forme de fichier</string>
     <string name="settings_system_font_summary">Utilisez la police fournie par votre système d'exploitation</string>
     <string name="settings_thumbnail_shape_summary">Choisissez la forme des images dans le lecteur agrandi</string>
@@ -2362,7 +2362,7 @@
         <item quantity="many">%1$d min</item>
         <item quantity="other">%1$d min</item>
     </plurals>
-    <string name="discord_continue_in_browser">Poursuivez la connexion à Discord depuis votre navigateur puis retournez sur Metrolist.</string>
+    <string name="discord_continue_in_browser">Poursuivez la connexion à Discord depuis votre navigateur puis retournez sur SUKIZY.</string>
     <string name="discord_open_browser_again">Ouvrir à nouveau</string>
     <string name="discord_browser_open_failed">Impossible d'ouvrir le navigateur. Veuillez réessayer.</string>
     <string name="menu_create_station">Créer une radio</string>
@@ -2377,7 +2377,7 @@
     <string name="lyrics_progressive_blur">Flou progressif des paroles</string>
     <string name="lyrics_progressive_blur_description">Ajoute un effet de flou progressif aux paroles suivant et précédent la ligne en cours de lecture</string>
     <string name="desktop_minimize_to_tray">Réduire vers la barre d'état</string>
-    <string name="desktop_minimize_to_tray_desc">Fermer la fenêtre réduit Metrolist vers la barre d'état système à la place</string>
+    <string name="desktop_minimize_to_tray_desc">Fermer la fenêtre réduit SUKIZY vers la barre d'état système à la place</string>
     <string name="no_other_devices_nearby">Aucun appareil à proximité</string>
     <string name="album_order_original">Par défaut</string>
     <string name="settings_cast_title">Cast</string>
@@ -2406,7 +2406,7 @@
     <string name="settings_storage_summary">%1$s utilisés • %2$s disponibles</string>
     <string name="live">EN DIRECT</string>
     <string name="audio_boost">Préampli</string>
-    <string name="equalizer_usage_warning">L'équipe de Metrolist décline toute responsabilité quant à votre utilisation de MetroEQ.</string>
+    <string name="equalizer_usage_warning">L'équipe de SUKIZY décline toute responsabilité quant à votre utilisation de MetroEQ.</string>
     <string name="login">Se connecter</string>
     <string name="scrobble_login_failed">Échec de la connexion</string>
     <string name="together">Ensemble</string>
@@ -2545,7 +2545,7 @@
     <string name="ai_setup_description">Créez un compte OpenRouter, connectez-vous et choisissez un modèle gratuit.</string>
     <string name="ai_setup_step">Étape %1$d sur %2$d</string>
     <string name="ai_setup_account">Créez un compte OpenRouter</string>
-    <string name="ai_setup_account_description">OpenRouter permet à Metrolist d'accéder à des modèles d'IA pour traduire les paroles.</string>
+    <string name="ai_setup_account_description">OpenRouter permet à SUKIZY d'accéder à des modèles d'IA pour traduire les paroles.</string>
     <string name="ai_setup_limits">Les modèles gratuits permettent jusqu'à %1$d requêtes par minute et %2$d par jour ; ou %4$d par jour après avoir acheté plus de %3$d crédits.</string>
     <string name="ai_setup_create_account">Créer un compte</string>
     <string name="ai_setup_view_limits">Vérifiez les limites actuelles</string>
@@ -2589,8 +2589,8 @@
     <string name="ai_setup_daily_hint">Réessayez demain ou ajoutez des crédits dans OpenRouter pour augmenter votre limite quotidienne. Changer de modèle ne permet pas de contourner cette limite.</string>
     <string name="ai_setup_minute_hint">Réessayez une fois la limite de requêtes par minute d'OpenRouter réinitialisée. Changer de modèle ne permet pas de contourner cette limite.</string>
     <string name="ai_setup_verify_description">Envoie un court échantillon à traduire au modèle sélectionné. La traduction n'est activée que si le test est réussi.</string>
-    <string name="account_keyring_required">Metrolist a besoin d'accéder au trousseau système pour restaurer votre compte. Veuillez déverrouiller le trousseau. Metrolist réessaiera automatiquement.</string>
-    <string name="account_linux_keyring_required">Metrolist requiert un trousseau de clés système pour restaurer votre compte. Installez libsecret-tools ou le paquet de votre distribution contenant secret-tool, puis assurez-vous que le trousseau est actif et déverrouillé. Metrolist réessaiera automatiquement.</string>
+    <string name="account_keyring_required">SUKIZY a besoin d'accéder au trousseau système pour restaurer votre compte. Veuillez déverrouiller le trousseau. SUKIZY réessaiera automatiquement.</string>
+    <string name="account_linux_keyring_required">SUKIZY requiert un trousseau de clés système pour restaurer votre compte. Installez libsecret-tools ou le paquet de votre distribution contenant secret-tool, puis assurez-vous que le trousseau est actif et déverrouillé. SUKIZY réessaiera automatiquement.</string>
     <string name="blocked_songs">Titres masqués</string>
     <string name="blocked_songs_desc">Restaurez les titres que vous avez masqués</string>
     <string name="blocked_songs_empty">Aucun titre masqué</string>
