@@ -16,6 +16,18 @@ HSPLcom/metrolist/shared/ui/components/SpeedDialGridKt**->**(**)**
 HSPLcom/metrolist/android/ui/components/MiniPlayerKt**->**(**)**
 HPLcom/metrolist/shared/ui/components/BottomSheetKt**->**(**)**
 HPLcom/metrolist/shared/ui/components/BottomSheetState**->**(**)**
+# Library grid scrolling, item cards and the Home shelf rows that are reused while scrolling.
+HSPLcom/metrolist/shared/ui/screens/LibraryContent**->**(**)**
+HSPLcom/metrolist/shared/ui/mobile/MobileLibrary**->**(**)**
+HSPLcom/metrolist/android/ui/screens/LibraryScreen**->**(**)**
+HSPLcom/metrolist/shared/ui/screens/HomeShelfBuilder**->**(**)**
+HSPLcom/metrolist/shared/ui/components/HomeComponents**->**(**)**
+HSPLcom/metrolist/shared/ui/components/LibraryItemContainer**->**(**)**
+HSPLcom/metrolist/shared/ui/components/LibraryCovers**->**(**)**
+# Glass surfaces draw on every scroll frame behind the top bar and navigation pill.
+HSPLcom/metrolist/shared/ui/glass/**->**(**)**
+HSPLcom/metrolist/android/ui/component/FloatingTopAppBar**->**(**)**
+
 # The expanded player, queue, progress sliders and lyrics redraw every frame while visible.
 HPLcom/metrolist/shared/ui/player/**->**(**)**
 HPLcom/metrolist/android/ui/player/**->**(**)**
