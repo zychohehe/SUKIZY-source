@@ -886,9 +886,13 @@ class Settings(
         librarySortingByFilterJson = Json.encodeToString(librarySortingByFilter() + (key.name to sorting))
     }
 
-    private fun librarySortingByFilter(): Map<String, LibrarySorting> =
+    // Decoded once per change of the stored JSON; library composables read this on every recomposition.
+    private val librarySortingByFilterMap: Map<String, LibrarySorting> by derivedStateOf {
         runCatching { Json.decodeFromString<Map<String, LibrarySorting>>(librarySortingByFilterJson) }
             .getOrDefault(emptyMap())
+    }
+
+    private fun librarySortingByFilter(): Map<String, LibrarySorting> = librarySortingByFilterMap
 
     var hiddenLibraryUndoHintShown by preference(HiddenLibraryUndoHintShownKey, false)
     var hiddenHomeUndoHintShown by preference(HiddenHomeUndoHintShownKey, false)

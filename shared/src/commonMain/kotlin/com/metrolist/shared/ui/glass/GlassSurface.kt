@@ -17,7 +17,7 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.draw.drawWithCache
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
@@ -48,25 +48,28 @@ fun Modifier.glassSource(baseColor: Color): Modifier {
     val primary = scheme.primary
     val tertiary = scheme.tertiary
     val dark = baseColor.luminance() < 0.5f
+    // Gradients are built once per size instead of on every draw frame behind the whole screen.
     val backdrop =
-        Modifier.drawBehind {
-            drawRect(baseColor)
-            if (baseColor.alpha > 0f) {
-                val strength = if (dark) 0.20f else 0.14f
-                drawRect(
-                    Brush.radialGradient(
-                        listOf(primary.copy(alpha = strength), Color.Transparent),
-                        center = Offset(size.width * 0.15f, size.height * 0.12f),
-                        radius = size.maxDimension * 0.7f,
-                    ),
+        Modifier.drawWithCache {
+            val strength = if (dark) 0.20f else 0.14f
+            val primaryGlow =
+                Brush.radialGradient(
+                    listOf(primary.copy(alpha = strength), Color.Transparent),
+                    center = Offset(size.width * 0.15f, size.height * 0.12f),
+                    radius = size.maxDimension * 0.7f,
                 )
-                drawRect(
-                    Brush.radialGradient(
-                        listOf(tertiary.copy(alpha = strength * 0.8f), Color.Transparent),
-                        center = Offset(size.width * 0.9f, size.height * 0.85f),
-                        radius = size.maxDimension * 0.65f,
-                    ),
+            val tertiaryGlow =
+                Brush.radialGradient(
+                    listOf(tertiary.copy(alpha = strength * 0.8f), Color.Transparent),
+                    center = Offset(size.width * 0.9f, size.height * 0.85f),
+                    radius = size.maxDimension * 0.65f,
                 )
+            onDrawBehind {
+                drawRect(baseColor)
+                if (baseColor.alpha > 0f) {
+                    drawRect(primaryGlow)
+                    drawRect(tertiaryGlow)
+                }
             }
         }
     // The backdrop sits inside the source so the blur samples it too.
